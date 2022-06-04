@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'Kiona';
-    src: local('Kiona'), url(/static/font/Kiona-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Aron Grotesque';
-    src: local('Aron Grotesque'), url(/static/font/aron-grotesque.regular.ttf) format('truetype');
-}
-
 h1 {
     font-family: var(--kotoba2);
 }
