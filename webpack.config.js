@@ -30,7 +30,7 @@ module.exports = {
     plugins: [new MiniCssExtractPlugin()],
     module: {
         rules: [{
-            test: /\.(scss|css)$/i,
+            test: /\.(scss|css|ttf|otf)$/i,
             type: 'asset/resource',
             dependency: { not: ['url'] },
             use: [MiniCssExtractPlugin.loader, "css-loader"],
