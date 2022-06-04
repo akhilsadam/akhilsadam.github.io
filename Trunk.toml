@@ -2,7 +2,7 @@
 target = "index.html"
 dist = "dist"
 release = false
-public_url = "/yew-template-for-github-io/"
+public_url = "/"
 # public_url = "/{project_name}/"            # for {username}.github.io/{project_name}
 # public_url = "/"                           # for {username}.github.io
 
@@ -23,5 +23,10 @@ command = "sh"
 # run tailwind build with webpack
 command_arguments = [
     "-c",
-    "[ ! -d \"./node_modules\" ] && npm i || :; npm run build_css",
+    "'/c/Program Files/nodejs/npm.cmd' install webpack-cli; '/c/Program Files/nodejs/npm.cmd' run build_css",
 ]
+# https://github.com/thedodd/trunk/issues/89 so install master branch for trunk
+# rustup target add wasm32-unknown-unknown # needed if not already setup
+
+# COMMANDS FOR BUILD:
+# trunk serve --public-url=/dev/

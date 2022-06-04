@@ -2,23 +2,30 @@ use yew::prelude::*;
 use yew_router::prelude::*;
 
 // ===================================================================================
+mod config;
+pub use crate::config::info;
+
+mod default;
+pub use crate::default::*;
+
+// ===================================================================================
 // for {username}.github.io/{repo_name}
 // replace 'yew-template-for-github.io' to your repo name
 
-#[derive(Clone, Routable, PartialEq)]
+#[derive(Routable, PartialEq, Debug, Clone)]
 enum RootRoute {
-    #[at("/yew-template-for-github-io/")]
+    #[at("/")]
     Home,
-    #[at("/yew-template-for-github-io/:s")]
+    #[at("/:s")]
     Route,
 }
 
-#[derive(Clone, Routable, PartialEq)]
+#[derive(Routable, PartialEq, Debug, Clone)]
 enum Route {
-    #[at("/yew-template-for-github-io/about")]
+    #[at("/about")]
     About,
-    #[not_found]
-    #[at("/yew-template-for-github-io/404")]
+
+    #[at("*")]
     NotFound,
 }
 
@@ -34,7 +41,8 @@ fn root_route(routes: &RootRoute) -> Html {
 fn switch(routes: &Route) -> Html {
     match routes {
         Route::About => html! { <p>{ "About" }</p> },
-        Route::NotFound => html! { <p>{ "Not Found" }</p> },
+        // Route::NotFound => html! { <p>{ "Not Found" }</p> },
+        Route::NotFound => default::notfound(),
     }
 }
 
@@ -65,10 +73,11 @@ fn switch(routes: &Route) -> Html {
 /// main root
 #[function_component(App)]
 fn app() -> Html {
+    // let proxy = config::info();
     html! {
         // ********************************************************
         // **    basename is not supported on yew 0.19.0 yet.    **
-        // <BrowserRouter basename="/yew-template-for-github-io/">
+        // <BrowserRouter basename="/">
         //     <Switch<Route> render={Switch::render(switch)} />
         // </BrowserRouter>
         // ********************************************************

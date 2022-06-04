@@ -1,8 +1,156 @@
-html {
-    background-color: #15191D;
-    color: #DCDCDC;
+@keyframes autofocus {
+    0% {
+        filter: blur(0px);
+    }
+    25% {
+        filter: blur(3px);
+    }
+    50% {
+        filter: blur(5px);
+    }
+    100% {
+        filter: blur(0px);
+    }
 }
 
-body {
-    font-family: Courier, Monospace;
+@keyframes inv-autofocus {
+    0% {
+        filter: blur(0px);
+    }
+    25% {
+        filter: blur(1px);
+    }
+    50% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+
+@keyframes autofocus2 {
+    0% {
+        filter: blur(0px) saturate(1);
+    }
+    25% {
+        filter: blur(3px) saturate(0.65);
+    }
+    50% {
+        filter: blur(5px) saturate(0.5);
+    }
+    100% {
+        filter: blur(0px) saturate(1);
+    }
+}
+
+@keyframes color-rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(180deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes delayshow {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    49% {
+        opacity: 0;
+        display: inline;
+    }
+    50% {
+        opacity: 0;
+        display: inline;
+    }
+    100% {
+        opacity: 1;
+        display: inline;
+    }
+}
+
+@keyframes delayhide {
+    0% {
+        opacity: 1;
+        display: inline;
+    }
+    49% {
+        opacity: 0;
+        display: inline;
+    }
+    50% {
+        opacity: 0;
+        display: inline;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes timeout {
+    0%,
+    100% {
+        height: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hover-ctrl:hover .hover-agent:not(:hover) {
+    animation: autofocus2 1s;
+}
+
+.hover-ctrl:hover .hover-cmd:hover {
+    animation: inv-autofocus 1s;
+}
+
+.delayed {
+    animation: delayshow 30s;
+}
+
+.timeout {
+    animation-name: delayshow, delayhide, timeout;
+    animation-duration: 5s, 5s, 2s;
+    animation-iteration-count: 1, 1, infinite;
+    animation-delay: 0s, 10s, 15s;
+}
+
+.delayed-blink {
+    animation: blink-1 2s infinite;
+    animation-delay: 15s;
+}
+
+.fade-in {
+    animation: fade-in 0.25s;
+}
+
+.slow-color-rotate {
+    animation: color-rotate 480s infinite;
+    animation-delay: 15s;
 }

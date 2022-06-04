@@ -1,1 +1,39 @@
+html {
+    background-color: black;
+    color: var(--sukaitsuri-iro);
+}
 
+body {
+    background: transparent;
+    font-family: var(--kotoba);
+}
+
+.fullscreen {
+    max-height: 100vh;
+    max-width: 100vw;
+    height: 100vh;
+    width: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.z-container {
+    display: grid;
+    grid-template: "container" 1fr;
+    overflow: hidden;
+}
+
+.z-container>* {
+    grid-area: 1/1;
+}
+
+.place-center {
+    place-items: center;
+    place-content: center;
+}
+
+.difference {
+    mix-blend-mode: difference;
+}
