@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Kiona;
+    src: url(/static/font/Kiona-Regular.ttf);
+}
+
+@font-face {
+    font-family: Aron Grotesque;
+    src: url(/static/font/aron-grotesque.regular.ttf);
+}
+
 h1 {
     font-family: var(--kotoba2);
 }
