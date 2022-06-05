@@ -1,0 +1,56 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    margin-top: 0vh !important;
+    background-color: #000;
+    background-image: url(../../img/musicL3.png);
+    background-blend-mode: overlay;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #000 !important;
+    background-image: url(../../img/musicL3.png);
+    background-blend-mode: hard-light !important;
+    background-size: cover !important;
+    background-attachment: absolute !important;
+    background-position: center !important;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background-color: #000 !important;
+    background-image: black;
+    background-blend-mode: difference !important;
+    background-size: cover !important;
+    background-attachment: absolute !important;
+    background-position: center !important;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #000 !important;
+    background-image: url(../../img/musicL3.png);
+    background-blend-mode: hard-light !important;
+    /* background-size: cover !important;*/
+    background-attachment: absolute !important;
+    background-position: 70% 25%!important;
+    border-right-color: #000;
+    border-right-width: 5px;
+    border-left-width: 0px;
+    border-right-style: solid;
+    border-top-color: #000;
+    border-bottom-color: #000;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+}
