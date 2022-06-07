@@ -1,21 +1,43 @@
+:root {
+    --min-font-size: 14px;
+    --med-font-size: 18px;
+    --hdk-font-size: 22px;
+    --uhd-font-size: 28px;
+    --kotoba: Aron Grotesque, Montserrat Regular;
+    --kotoba2: Kiona, Montserrat;
+}
+
+.yk {
+    font-family: Yuji Boku;
+}
+
 h1 {
     font-family: var(--kotoba2);
 }
 
 .huge {
-    font-size: 80px;
+    /* font-size: 80px; */
+    font-size: max( min(10vh, 10vw), var(--uhd-font-size));
 }
 
+
+/* .heading {
+    font-size: 28px;
+} */
+
 .large {
-    font-size: 20px;
+    /* font-size: 22px; */
+    font-size: max( min(2.75vh, 2.75vw), var(--hdk-font-size));
 }
 
 .normal {
-    font-size: 16px;
+    /* font-size: 18px; */
+    font-size: max( min(2.25vh, 2.25vw), var(--med-font-size));
 }
 
 .small {
-    font-size: 12px;
+    /* font-size: 14px; */
+    font-size: max( min(1.75vh, 1.75vw), var(--min-font-size));
 }
 
 .bold {

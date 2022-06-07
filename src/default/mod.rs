@@ -6,9 +6,9 @@ pub fn notfound() -> Html
     html!
     {
         <a href='/'>
-            <div class="fullscreen center z-container place-center layer hover-ctrl slow-color-rotate">
-                <div class="autoplay hover-agent" allow="autoplay">
-                    <video class="expand" loop=true autoplay=true muted=true name="media" autostart="1" controls=false>
+            <div class="fullscreen text-center z-container place-center layer hover-ctrl slow-color-rotate">
+                <div class="autoplay hover-agent fullscreen layer-center " allow="autoplay">
+                    <video class="layer" loop=true autoplay=true muted=true name="media" autostart="1" controls=false>
                         <source src="static/media/notfound.mp4" type="video/mp4"/>
                     </video>
                 </div>

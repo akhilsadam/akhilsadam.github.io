@@ -31,7 +31,7 @@ enum Route {
 
 fn root_route(routes: &RootRoute) -> Html {
     match routes {
-        RootRoute::Home => html! { <p class="text-4xl">{ "Yew Template. " }</p> },
+        RootRoute::Home => html! { <h2 class="yk huge">{ "kumorizoranokoyo" }</h2> }, //"kumorizora no kōyō 曇り空の紅葉" (cloudy sky autumn leaves)
         RootRoute::Route => html! {
             <Switch<Route> render={Switch::render(switch)} />
         },

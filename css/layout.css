@@ -1,4 +1,4 @@
-/* @media (max-aspect-ratio: 16/9) {
+@media (max-aspect-ratio: 16/9) {
     .layer {
         max-height: 100%;
         height: 100%;
@@ -12,11 +12,25 @@
         width: 100%;
         height: auto;
     }
-} */
+}
 
-.expand {
-    max-height: 100%;
-    max-width: 100%;
+.layer {
+    object-fit: cover;
+}
+
+
+/* CENTER LAYERS HAVE BAD TOPS (to be expected)*/
+
+
+/* - for this reason only use grids to stack center layers*/
+
+
+/* transform will convert blurring to blackscreen*/
+
+.layer-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .aps {
