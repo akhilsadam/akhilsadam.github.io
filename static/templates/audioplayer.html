@@ -1,0 +1,187 @@
+<template id="t1">
+    <script type="module" src="static/js/audioplayer.js" />
+    <style>
+        button {
+            padding: 0;
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+            outline: none;
+            width: 40px;
+            height: 40px;
+        }
+        #audio-player-container {
+            position: relative;
+            width: 100%;
+            height: 4em;
+            font-family: var(--kotoba);
+            --seek-before-width: 0%;
+            --volume-before-width: 100%;
+            --buffered-width: 0%;
+            letter-spacing: -0.5px;
+        }
+        p {
+            position: absolute;
+            top: -18px;
+            right: 5%;
+            padding: 0 5px;
+            margin: 10px 0 10px 0;
+            font-size: 28px;
+            background: transparent;
+        }
+        #play-icon {
+        }
+        path {
+            stroke: var(--rurikon);
+        }
+        .time {
+            display: inline-block;
+            width: 37px;
+            text-align: center;
+            font-size: 20px;
+        }
+        output {
+            display: inline-block;
+            width: 32px;
+            text-align: center;
+            font-size: 20px;
+            clear: left;
+        }
+        #volume-slider {
+            width: 10%;
+            background: var(--hakusai);
+        }
+        #volume-slider::-webkit-slider-runnable-track {
+            background: rgba(0, 125, 181, 0.6);
+        }
+        #volume-slider::-moz-range-track {
+            background: rgba(0, 125, 181, 0.6);
+        }
+        #volume-slider::-ms-fill-upper {
+            background: rgba(0, 125, 181, 0.6);
+        }
+        #volume-slider::before {
+            width: var(--volume-before-width);
+        }
+        #mute-icon {
+        }
+        input[type="range"] {
+            position: relative;
+            -webkit-appearance: none;
+            width: 48%;
+            margin: 0;
+            padding: 0;
+            height: 19px;
+            outline: none;
+            background: var(--hakusai);
+        }
+        input[type="range"]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 3px;
+            cursor: pointer;
+            background: linear-gradient(to right, var(--sora-iro) var(--buffered-width), var(--aijiro) var(--buffered-width));
+        }
+        input[type="range"]::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            width: var(--seek-before-width);
+            height: 3px;
+            top: 8.5px;
+            background-color: var(--rurikon);
+            cursor: pointer;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            position: relative;
+            -webkit-appearance: none;
+            box-sizing: content-box;
+            border: 1px solid var(--rurikon);
+            height: 14px;
+            width: 14px;
+            top: -6.5px;
+            border-radius: 20%;
+            transform: rotate(45deg)  scale(0.75);
+            background-color: white;
+            cursor: pointer;
+        }
+        input[type="range"]:active::-webkit-slider-thumb {
+            transform: scale(1.2);
+            background: var(--rurikon);
+        }
+        input[type="range"]::-moz-range-track {
+            width: 100%;
+            height: 3px;
+            cursor: pointer;
+            background: linear-gradient(to right, var(--sora-iro) var(--buffered-width), var(--aijiro) var(--buffered-width));
+        }
+        input[type="range"]::-moz-range-progress {
+            background-color: var(--rurikon);
+        }
+        input[type="range"]::-moz-focus-outer {
+            border: 0;
+        }
+        input[type="range"]::-moz-range-thumb {
+            box-sizing: content-box;
+            border: 1px solid var(--rurikon);
+            height: 14px;
+            width: 14px;
+            top: -6.5px;
+            border-radius: 20%;
+            transform: rotate(45deg)  scale(0.75);
+            background-color: white;
+            cursor: pointer;
+        }
+        input[type="range"]:active::-moz-range-thumb {
+            transform: scale(1.2);
+            background: var(--rurikon);
+        }
+        input[type="range"]::-ms-track {
+            width: 100%;
+            height: 3px;
+            cursor: pointer;
+            background: var(--hakusai);
+            border: solid transparent;
+            color: transparent;
+        }
+        input[type="range"]::-ms-fill-lower {
+            background-color: var(--rurikon);
+        }
+        input[type="range"]::-ms-fill-upper {
+            background: linear-gradient(to right, var(--sora-iro) var(--buffered-width), var(--aijiro) var(--buffered-width));
+        }
+        input[type="range"]::-ms-thumb {
+            box-sizing: content-box;
+            border: 1px solid var(--rurikon);
+            height: 14px;
+            width: 14px;
+            top: -6.5px;
+            border-radius: 20%;
+            transform: rotate(45deg) scale(0.75);
+            background-color: white;
+            cursor: pointer;
+        }
+        input[type="range"]:active::-ms-thumb {
+            transform: scale(1.2);
+            background: var(--rurikon);
+        }
+    </style>
+    <div id="audio-player-container">
+        <audio src="" preload="metadata" loop></audio>
+        <p>
+            {{piece2}} | compose-midi
+        </p>
+        </br>
+        <div style="width: 100%; height: 20px;"></div>
+        <div style="background: linear-gradient(to left, var(--rurikon), var(--murasaki)); width: calc(100% - 60px); height: 1.5px; margin: 0 30px 0 30px;"></div>
+        <div style="display: flex; justify-content: space-evenly; align-items: center;">
+            <button id="play-icon"></button>
+            <span id="current-time" class="time">0:00</span>
+            <input type="range" id="seek-slider" max="100" value="0">
+            <span id="duration" class="time">0:00</span>            
+            <output id="volume-output">100</output>
+            <input type="range" id="volume-slider" max="100" value="100">
+            <button id="mute-icon"></button>
+        </div>
+        <div style="background: linear-gradient(to left, var(--rurikon), var(--murasaki)); width: calc(100% - 60px); height: 1.5px; margin: 0 30px 0 30px;"></div>
+    </div>
+</template>

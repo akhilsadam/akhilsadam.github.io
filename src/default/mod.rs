@@ -25,3 +25,23 @@ pub fn notfound() -> Html
     }
 }
 
+
+pub fn music() -> Html
+{
+    html!
+    {
+        <div class="fullscreen z-container">
+            <div>
+                //<div class="fullscreen bkgd-music" style="background-image: url(/static/img/music0.png);"></div>
+                <div class="sc-art"></div>
+            </div>
+            <div>
+                //<iframe class="sc-widget" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/lightwaveofficial" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+            </div>
+            <div id="template"/>
+            //<audio-player data-class = ".sc-widget"> </audio-player>
+            //<script type="module" src="static/js/audioplayer.js"></script>
+        </div>
+    
+    }  
+}

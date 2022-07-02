@@ -18,6 +18,7 @@ enum RootRoute {
     Home,
     #[at("/:s")]
     Route,
+    
 }
 
 #[derive(Routable, PartialEq, Debug, Clone)]
@@ -25,13 +26,16 @@ enum Route {
     #[at("/about")]
     About,
 
+    #[at("/music")]
+    Music,
+
     #[at("*")]
     NotFound,
 }
 
 fn root_route(routes: &RootRoute) -> Html {
     match routes {
-        RootRoute::Home => html! { <h2 class="yk huge">{ "kumorizoranokoyo" }</h2> }, //"kumorizora no kōyō 曇り空の紅葉" (cloudy sky autumn leaves)
+        RootRoute::Home => html! { <h2 class="yk huge">{ "main" }</h2> }, // "yozakura 夜桜 (cherry blossoms at night)" "kumorizora no kōyō 曇り空の紅葉" (cloudy sky autumn leaves)
         RootRoute::Route => html! {
             <Switch<Route> render={Switch::render(switch)} />
         },
@@ -42,6 +46,7 @@ fn switch(routes: &Route) -> Html {
     match routes {
         Route::About => html! { <p>{ "About" }</p> },
         // Route::NotFound => html! { <p>{ "Not Found" }</p> },
+        Route::Music => default::music(),
         Route::NotFound => default::notfound(),
     }
 }

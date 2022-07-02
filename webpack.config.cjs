@@ -1,3 +1,5 @@
+const lottieWeb = require('lottie-web')
+    // const SC = require('./js_modules/soundcloud.cjs')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const fs = require('fs');
 const projectRoot = __dirname;
