@@ -12,42 +12,51 @@ pub use crate::default::*;
 // for {username}.github.io/{repo_name}
 // replace 'yew-template-for-github.io' to your repo name
 
-#[derive(Routable, PartialEq, Debug, Clone)]
-enum RootRoute {
-    #[at("/")]
-    Home,
-    #[at("/:s")]
-    Route,
+// #[derive(Routable, PartialEq, Debug, Clone)]
+// enum RootRoute {
+//     #[at("/")]
+//     Home,
+//     #[at("/:s")]
+//     Route,
     
-}
+// }
 
 #[derive(Routable, PartialEq, Debug, Clone)]
 enum Route {
+    #[at("/")]
+    Home,
+
     #[at("/about")]
     About,
+
+    #[at("/cv")]
+    Cv,
 
     #[at("/music")]
     Music,
 
-    #[at("*")]
+    #[not_found]
+    #[at("/404")]
     NotFound,
 }
 
-fn root_route(routes: &RootRoute) -> Html {
-    match routes {
-        RootRoute::Home => html! { <h2 class="yk huge">{ "main" }</h2> }, // "yozakura 夜桜 (cherry blossoms at night)" "kumorizora no kōyō 曇り空の紅葉" (cloudy sky autumn leaves)
-        RootRoute::Route => html! {
-            <Switch<Route> render={Switch::render(switch)} />
-        },
-    }
-}
+// fn root_route(routes: &RootRoute) -> Html {
+//     match routes {
+//         RootRoute::Home => default::main(), //html! { <h2 class="yk huge">{ "main" }</h2> }, // "yozakura 夜桜 (cherry blossoms at night)" "kumorizora no kōyō 曇り空の紅葉" (cloudy sky autumn leaves)
+//         RootRoute::Route => html! {
+//             <Switch<R> render={Switch::R(switch)} />
+//         },
+//     }
+// }
 
-fn switch(routes: &Route) -> Html {
-    match routes {
+fn switch(route: Route) -> Html {
+    match route {
+        Route::Home => default::main(),
         Route::About => html! { <p>{ "About" }</p> },
         // Route::NotFound => html! { <p>{ "Not Found" }</p> },
         Route::Music => default::music(),
         Route::NotFound => default::notfound(),
+        Route::Cv => default::cv(),
     }
 }
 
@@ -87,12 +96,12 @@ fn app() -> Html {
         // </BrowserRouter>
         // ********************************************************
         <BrowserRouter>
-            <Switch<RootRoute> render={Switch::render(root_route)} />
+            <Switch<Route> render={switch} />
         </BrowserRouter>
     }
 }
 
 /// entry point
 fn main() {
-    yew::start_app::<App>();
+    yew::Renderer::<App>::new().render();
 }

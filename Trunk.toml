@@ -23,7 +23,7 @@ command = "sh"
 # run tailwind build with webpack
 command_arguments = [
     "-c",
-    "'/c/Program Files/nodejs/npm.cmd' install webpack-cli; '/c/Program Files/nodejs/npm.cmd' run build_css",
+    "npm install webpack-cli && npm run build_css",
 ]
 # https://github.com/thedodd/trunk/issues/89 so install master branch for trunk
 # rustup target add wasm32-unknown-unknown # needed if not already setup

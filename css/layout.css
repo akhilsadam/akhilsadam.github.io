@@ -41,30 +41,13 @@
     position: absolute;
 }
 
-.sc-art {
-    top: 20%;
-    left: 25%;
-    height: 40%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    aspect-ratio: 1;
-    z-index: 1;
-    position: absolute;
-}
-
-.sc-widget {
-    z-index: 2;
-    opacity: 0.1;
-}
-
-.bkgd-music {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
-}
-
 .hidden {
     visibility: hidden;
+}
+
+.visor {
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    position: relative;
 }

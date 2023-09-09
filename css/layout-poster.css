@@ -1,0 +1,111 @@
+/* comments first
+
+This is a poster template assuming a 3-column poster (can have 2-column sections
+
+post-title is a h1
+then later stuff are in post-content class
+with h3 headers and p paragraphs
+*/
+
+@media screen and (min-width: 320px) {
+    .img-row>* {
+        flex-wrap: wrap;
+    }
+    .main-row {
+        flex-wrap: wrap !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: calc(100% - (30px * 2));
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+     :root {
+        --column-rule-width: 40vw;
+        /* 40% of viewport width, as percentage is invalid */
+    }
+    .poster-scols h3 {
+        margin-top: 15px;
+    }
+    .img-row>* {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+     :root {
+        --column-rule-width: 30vw;
+        /* 40% of viewport width, as percentage is invalid */
+    }
+    .thin {
+        width: 30vw;
+    }
+    .main-row {
+        flex-wrap: nowrap !important;
+    }
+}
+
+.post-content h1 {
+    /* font-family: 'Comfortaa'; */
+    /* remove this */
+}
+
+.poster-row {
+    width: 100%;
+    left: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.poster-row>* {
+    flex-grow: 1;
+}
+
+.poster-col {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.poster-col>* {
+    flex-grow: 1;
+}
+
+.poster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 10px;
+}
+
+.poster-scols {
+    columns: auto var(--column-rule-width);
+    column-gap: 40px;
+}
+
+.img-row>* {
+    /* note that due to markdown we are actually styling a <p> inside the div */
+    /* display: grid;
+    grid-template-columns: auto-fit;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    row-gap: 50px;
+    padding: 20px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    height: 100%;
+}
+
+.img-row>p>* {
+    flex: 0 1 auto;
+}

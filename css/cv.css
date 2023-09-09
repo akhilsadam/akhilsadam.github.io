@@ -1,0 +1,41 @@
+/*  hardcoding for 8.5x11in page size */
+
+:root {
+    --aspect-ratio: 0.7727272727272727;
+}
+
+.z-2-back {
+    z-index: -2;
+    position: absolute;
+}
+
+.cv {
+    /* width: 21cm;
+    height: 29.7cm; */
+    width: 100%;
+    aspect-ratio: var(--aspect-ratio);
+    /* margin: 27mm 16mm 27mm 16mm; */
+    /* background-color: violet; */
+}
+
+.cv>* {
+    aspect-ratio: 1.0;
+}
+
+div.chapter,
+div.appendix,
+h2 {
+    page-break-after: always;
+}
+
+@media print {
+    .fullscreen {
+        display: none;
+    }
+    @page {
+        width: 215.9mm;
+        height: 279.4mm;
+        margin: 27mm 16mm 27mm 16mm;
+        background-color: white;
+    }
+}

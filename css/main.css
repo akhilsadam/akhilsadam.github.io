@@ -1,0 +1,29 @@
+.bkgd-main {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+}
+
+.bkgd-main-0 {
+    /* background-size: contain; */
+    min-width: 30%;
+    min-height: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -6;
+    position: relative;
+}
+
+@media (min-width:320px) {
+    .bkgd-main-0 {
+        width: 100%;
+    }
+}
+
+@media (min-width:801px) {
+    .bkgd-main-0 {
+        width: 30%;
+        right: 5%;
+    }
+}

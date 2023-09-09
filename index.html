@@ -8,7 +8,7 @@
     <link data-trunk rel="copy-dir" href="./static" />
     <script src="https://kit.fontawesome.com/517b442cc3.js" crossorigin="anonymous"></script>
     <script src="static/js/ext/soundcloud.cjs" crossorigin="anonymous"></script>
-    <title>Akhil Sadam</title>
+    <title>nighttime cherry blossoms</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
@@ -23,9 +23,14 @@
             src: local('Aron Grotesque'), url(/static/font/aron-grotesque.regular.ttf) format('truetype');
         }
     </style>
+
+    <!-- for latex support -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!--  -->
 </head>
 
-<body>
+<body onload="renderLaTeX()">
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript ">
         // Single Page Apps for GitHub Pages
