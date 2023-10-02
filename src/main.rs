@@ -110,9 +110,9 @@ fn app() -> Html {
         //     <Switch<Route> render={Switch::render(switch)} />
         // </BrowserRouter>
         // ********************************************************
-        <HashRouter>
+        <BrowserRouter basename={"/"}>
             <Switch<Route> render={switch} />
-        </HashRouter>
+        </BrowserRouter>
     }
 }
 
