@@ -1,0 +1,37 @@
+.card {
+    display: block;
+    /* width: 24%; */
+    margin-right: 0.25%;
+    margin-left: 0.25%;
+    height: 80vh;
+    cursor: pointer;
+    overflow: none;
+    background-color: var(--kuro);
+    flex: 1 1 1px;
+}
+
+.card embed {
+    margin: 5px;
+    padding: 0;
+    height: calc(80vh - 10px);
+    width: calc(100% - 10px);
+}
+
+.card-columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+
+/* .card:hover, */
+
+.card:focus,
+.card:focus-within,
+.card:has(embed:focus),
+.card:has(embed:hover),
+.card:has(embed:focus-within) {
+    overflow: auto;
+    transition: ease-in 0.3s;
+    flex: 1 0 90%;
+}
