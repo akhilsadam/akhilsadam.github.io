@@ -49,7 +49,7 @@
     <div class="cv_right" markdown="1">
 
 ## Machine Learning Research Assistant, PHO-ICES Group, UT Austin, TX
- - Reduced order modeling for [medium-range weather forecasting](https://akhilsadam.github.io/projects/pho-ices/weather-forecast)
+ - Reduced order modeling for [medium-range weather forecasting](https://akhilsadam.github.io/#/projects/pho-ices/weather-forecast)
  - Memory-based convolutional LSTM and ReZero transformer architectures
  - HPC/MPI computing for 100GB+ datasets and 20+ models
  - Negative-data and k-Lipschitz approaches to improve generalization
@@ -119,7 +119,7 @@
 
 ## Computational Physics Research Assistant, UTKL Group, UT Austin, TX
  - [Positron Emission Tomography (PET) Design and Simulation](https://physicsworld.com/a/in-beam-pet-provides-the-first-glimpse-of-a-proton-flash-beam/)
- - Design lead for an inexpensive plastic scintillator [1-meter barrel PET](https://akhilsadam.github.io/projects/lang-tomography/index)
+ - Design lead for an inexpensive plastic scintillator [1-meter barrel PET](https://akhilsadam.github.io/#/projects/lang-tomography/index)
  - Investigated gamma interactions for different scintillator [surface treatment](https://akhilsadam.github.io/PlasticPET-graphicx/)
  - Assisted with an extruded wavelength shifter for [LEGEND](https://legend-exp.org/)
  -  [KNN, CNN algorithms](https://github.com/akhilsadam/PlasticPET-ANLY/tree/master) improve sub-scintillator position resolution by 20%
@@ -158,7 +158,7 @@
     <div class="cv_right" markdown="1">
 
 ## Experimental Physics Research Assistant, Phonon Momentum Group, UT Austin, TX
- - Design and analysis of [phonon angular momentum measurement](https://akhilsadam.github.io/projects/markert-superconductivty/phonon-momentum)
+ - Design and analysis of [phonon angular momentum measurement](https://akhilsadam.github.io/#/projects/markert-superconductivty/phonon-momentum)
  - Used the Einstein-de Haas effect with capacitive, fiber-optic-interferometry
  - High-Q double torsional oscillator improved force PSNR 300x
  - Initial findings presented at [APS March 2022](https://meetings.aps.org/Meeting/MAR22/Session/K31.1)

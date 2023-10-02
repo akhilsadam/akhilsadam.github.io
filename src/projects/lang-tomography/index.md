@@ -20,15 +20,15 @@
 
 <div class="card-columns" markdown="1">
 <div class="card" markdown="1" tabindex="1">
-<embed src="plastic-pet/plastic-pet"></embed>
+<embed src="/#/projects/lang-tomography/plastic-pet/plastic-pet"></embed>
 </div>
 
 <div class="card" markdown="1" tabindex="2">
-<embed src="reconstruction/reconstruction"></embed>
+<embed src="/#/projects/lang-tomography/reconstruction/reconstruction"></embed>
 </div>
 
 <div class="card" markdown="1" tabindex="3">
-<embed src="mini-pet/mini-pet"></embed>
+<embed src="/#/projects/lang-tomography/mini-pet/mini-pet"></embed>
 
 </div>
 
