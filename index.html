@@ -7,11 +7,13 @@
     <link data-trunk rel="css" href="./dist/css/main.css" />
     <link data-trunk rel="copy-dir" href="./static" />
     <script src="https://kit.fontawesome.com/517b442cc3.js" crossorigin="anonymous"></script>
-    <script src="static/js/ext/soundcloud.cjs" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./static/js/ext/soundcloud.cjs"></script>
     <title>nighttime cherry blossoms</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <style>
         @font-face {
             font-family: 'Kiona';
@@ -22,15 +24,105 @@
             font-family: 'Aron Grotesque';
             src: local('Aron Grotesque'), url(/static/font/aron-grotesque.regular.ttf) format('truetype');
         }
+        
+        @font-face {
+            font-family: 'TBUDGothic Std R';
+            src: local('TBUDGothic Std R'), url(/static/font/TBUDGothicStdR.ttf) format('truetype');
+        }
     </style>
 
     <!-- for latex support -->
+
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <!--  -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <!-- <script id="MathJax-script" async src="/static/js/ext/mathjax.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+    <script async src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
+                delimiters: [{
+                    left: '$$',
+                    right: '$$',
+                    display: true
+                }, {
+                    left: '$',
+                    right: '$',
+                    display: true
+                }, {
+                    left: '\\(',
+                    right: '\\)',
+                    display: false
+                }, {
+                    left: '\\[',
+                    right: '\\]',
+                    display: true
+                }, {
+                    left: '\\\\[',
+                    right: '\\\\]',
+                    display: true
+                }],
+                // • rendering keys, e.g.:
+                throwOnError: false
+            });
+        });
+    </script> -->
+    <!-- onload=renderMathInElement(document.body) -->
+    <script>
+        // Next/previous controls
+        function plusSlides(n, name) {
+            let newslide = parseInt(name.dataset.index) + n;
+            showSlides(newslide, name);
+        }
+
+        // Thumbnail image controls
+        /*(function currentSlide(n, name) {
+            showSlides(slideIndex = n, name);
+        }*/
+
+        function showSlides(n, slideParent) {
+            //n = parseInt(n);
+            console.log(n);
+            let i;
+            let slideIndex = n;
+            let slides = slideParent.querySelectorAll(".mySlides");
+            console.log(slides);
+            //let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            /*for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }*/
+            slides[slideIndex - 1].style.display = "block";
+            //dots[slideIndex - 1].className += " active";
+            slideParent.dataset.index = slideIndex;
+        }
+    </script>
 </head>
 
-<body onload="renderLaTeX()">
+<body>
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript ">
         // Single Page Apps for GitHub Pages

@@ -5,9 +5,8 @@ use yew_router::prelude::*;
 mod config;
 pub use crate::config::info;
 
-mod default;
-pub use crate::default::*;
-
+mod projects;
+pub use crate::projects::*;
 // ===================================================================================
 // for {username}.github.io/{repo_name}
 // replace 'yew-template-for-github.io' to your repo name
@@ -32,8 +31,20 @@ enum Route {
     #[at("/cv")]
     Cv,
 
+    #[at("/projects/*mdpath")]
+    Project { mdpath: String},
+
     #[at("/music")]
     Music,
+
+    #[at("/art")]
+    Art,
+
+    #[at("/world")]
+    World,
+
+    #[at("/arch")]
+    Arch,
 
     #[not_found]
     #[at("/404")]
@@ -42,7 +53,7 @@ enum Route {
 
 // fn root_route(routes: &RootRoute) -> Html {
 //     match routes {
-//         RootRoute::Home => default::main(), //html! { <h2 class="yk huge">{ "main" }</h2> }, // "yozakura 夜桜 (cherry blossoms at night)" "kumorizora no kōyō 曇り空の紅葉" (cloudy sky autumn leaves)
+//         RootRoute::Home => projects::default::main(), //html! { <h2 class="yk huge">{ "main" }</h2> }, // "yozakura 夜桜 (cherry blossoms at night)" "kumorizora no kōyō 曇り空の紅葉" (cloudy sky autumn leaves)
 //         RootRoute::Route => html! {
 //             <Switch<R> render={Switch::R(switch)} />
 //         },
@@ -51,12 +62,16 @@ enum Route {
 
 fn switch(route: Route) -> Html {
     match route {
-        Route::Home => default::main(),
+        Route::Home => projects::cv(),//projects::default::main(),
         Route::About => html! { <p>{ "About" }</p> },
         // Route::NotFound => html! { <p>{ "Not Found" }</p> },
-        Route::Music => default::music(),
-        Route::NotFound => default::notfound(),
-        Route::Cv => default::cv(),
+        Route::Project { mdpath } => projects::project(&mdpath),
+        Route::Music => projects::default::music(),
+        Route::Art => projects::art(),
+        Route::World => projects::world(),
+        Route::Arch => projects::arch(),
+        Route::NotFound => projects::default::notfound(),
+        Route::Cv => projects::cv(),
     }
 }
 

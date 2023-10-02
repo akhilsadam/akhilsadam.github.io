@@ -5,6 +5,7 @@
     --uhd-font-size: 28px;
     --kotoba: Aron Grotesque, Montserrat Regular;
     --kotoba2: Kiona, Montserrat;
+    --code: 'Poppins', sans-serif;
 }
 
 .yk {
@@ -42,4 +43,16 @@ h1 {
 
 .bold {
     font-weight: bold;
+}
+
+li {
+    font-size: 14px;
+    margin-left: 10px;
+    list-style-type: disc;
+    display: list-item;
+}
+
+.card h1 {
+    font-size: 1em !important;
+    font-family: 'Comfortaa' !important;
 }

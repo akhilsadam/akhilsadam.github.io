@@ -11,13 +11,11 @@ serde = "1.0.117"
 serde_derive = "1.0.137"
 reqwasm = "0.5.0"
 gloo = "0.10.0"
+gloo-console = "0.3.0"
 yew-router = "0.17.0"
 toml = "0.7.6"
 wasm-bindgen = "0.2.74"
 comrak = "0.18.0"
-
-[dependencies.web-sys]
-version = "0.3.56"
-features = [
-    "HtmlInputElement",
-]
+# include_dir = "0.7.3"
+web-sys = {version = "0.3.56", features = ["HtmlInputElement"]}
+gloo-net = "0.4.0"

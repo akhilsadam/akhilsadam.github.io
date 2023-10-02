@@ -1,0 +1,38 @@
+.pubs-section::before {
+    content: '' !important;
+    background: url(/static/img/Shubun2.png)!important;
+    background-size: contain !important;
+    background-position: center !important;
+    position: absolute!important;
+    width: 7.5cm!important;
+    height: 2.5cm!important;
+    top: -1.7cm !important;
+    right: 0px!important;
+    z-index: -3;
+    clip-path: polygon(45% 50%, 45% 2%, 100% 2%, 100% 90%, 0 90%, 0 85%);
+}
+
+.pubs-section::after {
+    content: '' !important;
+    background: url(/static/img/Shubun.jpg)!important;
+    background-size: contain !important;
+    background-position: center !important;
+    position: absolute!important;
+    width: 7.5cm!important;
+    height: 2.5cm!important;
+    top: -1.7cm !important;
+    right: 0px!important;
+    z-index: -3;
+    clip-path: polygon(45% 50%, 45% 2%, 100% 2%, 100% 90%, 0 90%, 0 85%);
+    filter: opacity(0.5) grayscale(100%);
+    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset
+}
+
+@media print {
+    .pubs-section::before {
+        z-index: 0;
+    }
+    /* .pubs-section::after {
+        z-index: 0;
+    } */
+}
