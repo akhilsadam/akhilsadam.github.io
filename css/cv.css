@@ -384,6 +384,7 @@ div.appendix {
         line-height: 1.1;
         font-size: 11px !important;
     }
+
     .poster-column {
         display: flex;
         flex-direction: row-reverse;
@@ -433,13 +434,18 @@ div.appendix {
     }
     .skill_list span {
         word-break: keep-all;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .skill_NLang .label{
+        display: none;
     }
     div.items {
         padding: 2px;
         /* outline: none; */
     }
     .pubs-section {
-        width: 11.7cm !important;
+        width: 11.7cm !important; /*11.7*/
         right: 0px !important;
         position: relative;
     }
@@ -484,14 +490,46 @@ div.appendix {
     }
     .hon-section {
         margin: 0px;
-        margin-top: 1mm;
+        margin-top: 0.1mm;
         padding: 0px;
         font-size: 100%;
         height: min-content;
-        width: fit-content;
+        /* width: fit-content; */
+        width: 7.5cm !important;
+        line-height: 1.4;
+    }
+    .hon-section table{
+        border: none !important;
+
+    }
+    .hon-section tr{
+        display: grid;
+        grid-template-columns: 1fr 3cm;
+    }
+    .hon-section td:nth-child(1), .hon-section th:nth-child(1){
+        order: 1;
+    }
+    .hon-section td:nth-child(2), .hon-section th:nth-child(2){
+        order: 2;
+    }
+    .hon-section th:nth-child(3){
+        order: 4;
+        padding-left : 2mm !important;
+    }
+    .hon-section th:nth-child(4){
+        order: 3;
+        padding-left : 2mm !important;
+    }
+    .hon-section td:nth-child(3){
+        order: 4;
+        padding-left : 2mm !important;
+    }
+    .hon-section td:nth-child(4){
+        order: 3;
+        padding-left : 2mm !important;
     }
     .edu-section {
-        width: 6.5cm !important;
+        width: 5.5cm !important;
         left: 0px !important;
         position: relative;
     }

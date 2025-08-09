@@ -38,13 +38,22 @@
 
 [pyinclude](skills.md)
 
-<div id="resume" markdown="1">
+<!-- <div id="resume" markdown="1">
 
 ---
 
 [pyinclude](xp.md)
 
+</div> -->
+
+<div id="resume" markdown="1">
+
+---
+
+[pyinclude](edu.md)
+
 </div>
+
 </div>
 
 ---
@@ -55,29 +64,35 @@
 
 ---
 
+[pyinclude](edu.md)
+
 [pyinclude](xp.md)
 
-[pyinclude](edu.md)
-
 </div>
 
-<div id="resume" markdown="1">
-
-[pyinclude](edu.md)
-
-[pyinclude](pubs.md)
-
-</div>
 
 <div class="flex-row" markdown="1">
 
 [pyinclude](hon.md)
 
+
+<div id="resume" markdown="1">
+
+<!-- [pyinclude](edu.md) -->
+
+[pyinclude](pubs.md)
+
+</div>
+
 <div class="flex-col" markdown="1">
+
+<div id="optional" markdown="1">
 
 [pyinclude](reach.md)
 
 [pyinclude](add.md)
+
+</div>
 
 </div>
 </div>

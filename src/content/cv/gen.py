@@ -7,7 +7,7 @@ dwd = cwd + '/data'
 # make publications
 data = pd.read_csv(dwd + "/citations.csv", quotechar='"', skipinitialspace=True).to_numpy()
 
-maxn = 5
+maxn = 10
 
 author = data[:,0]
 title = data[:,1]
@@ -17,27 +17,31 @@ unpublished = np.array([isinstance(data[:,7][i], float) for i in range(len(data[
 
 fauthor = np.array([np.where(np.array(a.split('; ')) == 'Sadam, Akhil')[0][0] != 0 for a in author])
 
-ind = np.lexsort((unpublished,year,fauthor))
+ind = np.lexsort((unpublished,fauthor,-year)) # most important is last here
  
 author = author[ind][:maxn]
 title = title[ind][:maxn]
 journal = journal[ind][:maxn]
 year = year[ind][:maxn]
 
-maxl=70
-maxp=30
+maxl=55
+maxp=27
 
 def getlast(l,maxa):
     counts = np.cumsum([len(a) for a in l])
     try:
         where = np.where(counts > maxa)[0][0]
     except:
-        where = np.where(counts >= maxa)[0][0] - 1
+        try:
+            where = np.where(counts >= maxa)[0][0] - 1
+        except:
+            where = len(l) - 1
     return l[:where]
 
 def renameauthor(al):
     aq = al.split('; ')[:-1]
     out = ", ".join([f"{a.split(',')[1][1]} {a.split(',')[0]}" for a in aq])
+    print(out)
     if len(out) > maxl:
         out = ", ".join(getlast(out.split(', '),maxl)) + "..."
     return out

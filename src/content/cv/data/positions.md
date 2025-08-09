@@ -11,32 +11,36 @@
             Now
         </div>
         <div class="date_one" id="date">
-            Jan 2023
+            Sept 2024
         </div>
     </div>
     <div class="cv_right" markdown="1">
 
-## Machine Learning Research Assistant, PHO-ICES Group, UT Austin, TX
- - Reduced order modeling for [medium-range weather forecasting](https://akhilsadam.github.io/#/projects/pho-ices/weather-forecast)
- - Memory-based convolutional LSTM and ReZero transformer architectures
- - HPC/MPI computing for 100GB+ datasets and 20+ models
- - Negative-data and k-Lipschitz approaches to improve generalization
- - Collaborating author on AGU 2023 abstract. Part of MusiKAL collaboration
-- Supervised by Dr. Tan Bui (Oden Institute of Computational Engineering)
+## SciML Research Assistant, MSEAS, MIT, Cambridge, Massachusetts
+ - ML surrogate modeling for submesoscale quasi-geostrophic (QG) ocean
+ - Constructing high compression autoencoders for QG flow fields
+ - Investigating efficient long-term neural operator stability
+ - Investigating scale-invariant latent representations
+ - Using diffusion models to superresolve field and close missing physics
+ - Constructed autodifferentiable psuedospectral volume-penalized QG solver
 
 <div id="item">
  <div class="items">PyTorch</div>
- <div class="items">JAX</div>
- <div class="items">POD</div>
- <div class="items">DMD</div>
- <div class="items">LSTM</div>
- <div class="items">Transformer</div>
- <div class="items">ReZero</div>
- <div class="items">HPC at TACC</div>
+ <div class="items">Implicit Networks</div>
+ <div class="items">nODE / nDDE</div>
+ <div class="items">QG</div>
+ <div class="items">DC-AE</div>
+ <div class="items">FNO</div>
+ <div class="items">EDM</div>
+ <div class="items">DDIM</div>
+ <div class="items">SDE</div>
+ <div class="items">A6000</div>
+ <div class="items">HPC</div>
 </div>
 
 </div>
 </div>
+
 <div class="rxp_1" id="rxp" markdown="1">      
     <div class="cv_left" markdown="1">
         <div class="date_two" id="date">
@@ -49,12 +53,13 @@
     <div class="cv_right" markdown="1">
 
 
-## R&D Engineer/Contractor, Magic Leap Austin, TX
+## R&D Engineer/Contractor, Magic Leap Austin, TX (NDA)
  - Technical lead on dispense optimization software, 14k+ code lines
  - Using parametrized neural networks and tessellations
  - Optimized polygon generation and differencing, 6k+ input code lines
+ - Inverse RCWA solver (in R&D), 2k+ lines
  - Optimized dispense pattern editor, 1k+ lines in Blender
- - NDA, please ask if further information desired
+ <!-- - NDA, please ask if further information desired -->
 
 <div id="item">
 <div class="items">Numba</div>
@@ -73,7 +78,41 @@
 
  </div>
  </div>
-<div class="rxp_2" id="rxp" markdown="1">      
+
+ <div class="rxp_2" id="rxp" markdown="1">      
+    <div class="cv_left" markdown="1">
+        <div class="date_two" id="date">
+            Apr 2024
+        </div>
+        <div class="date_one" id="date">
+            Jan 2023
+        </div>
+    </div>
+    <div class="cv_right" markdown="1">
+
+## Machine Learning Research Assistant, PHO-ICES Group, UT Austin, TX
+ - Reduced order modeling for [medium-range weather forecasting](https://akhilsadam.github.io/#/projects/pho-ices/weather-forecast)
+ - Memory-based convolutional LSTM and ReZero transformer architectures
+ - HPC/MPI computing for 100GB+ datasets and 20+ models
+ - Negative-data and k-Lipschitz approaches to improve generalization
+ - Collaborating author on AGU 2023 abstract. Part of MusiKAL collaboration
+<!-- - Supervised by Dr. Tan Bui (Oden Institute of Computational Engineering) -->
+
+<div id="item">
+ <div class="items">PyTorch</div>
+ <div class="items">JAX</div>
+ <div class="items">POD</div>
+ <div class="items">DMD</div>
+ <div class="items">LSTM</div>
+ <div class="items">Transformer</div>
+ <div class="items">ReZero</div>
+ <div class="items">HPC at TACC</div>
+</div>
+
+</div>
+</div>
+
+<div class="rxp_3" id="rxp" markdown="1">      
     <div class="cv_left" markdown="1">
         <div class="date_two" id="date">
             May 2022
@@ -92,7 +131,7 @@
  - Assisted with an extruded wavelength shifter for [LEGEND](https://legend-exp.org/)
  -  [KNN, CNN algorithms](https://github.com/akhilsadam/PlasticPET-ANLY/tree/master) improve sub-scintillator position resolution by 20%
  - Initial results presented at [APS April 2022](https://meetings.aps.org/Meeting/APR22/Session/D08.5), with coauthored [paper](https://lirias.kuleuven.be/retrieve/675106).
- - Supervised by Dr. Lang of UT Austin. Met twice weekly.
+ <!-- - Supervised by Dr. Lang of UT Austin. Met twice weekly. -->
 
  <!-- (https://github.com/akhilsadam/Geant4-PET/tree/master) -->
 
@@ -114,13 +153,13 @@
 
  </div>
  </div>
- <div class="rxp_3" id="rxp" markdown="1">      
+ <div class="rxp_4" id="rxp" markdown="1">      
     <div class="cv_left" markdown="1">
         <div class="date_two" id="date">
             May 2022
         </div>
         <div class="date_one" id="date">
-            Aug 2020
+            May 2020
         </div>
     </div>
     <div class="cv_right" markdown="1">
@@ -130,7 +169,7 @@
  - Used the Einstein-de Haas effect with capacitive, fiber-optic-interferometry
  - High-Q double torsional oscillator improved force PSNR 300x
  - Initial findings presented at [APS March 2022](https://meetings.aps.org/Meeting/MAR22/Session/K31.1)
- - Supervised by Dr. Markert of UT Austin.
+ <!-- - Supervised by Dr. Markert of UT Austin. -->
 
 <div id="item">
 <div class="items">Python</div>

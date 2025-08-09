@@ -1,18 +1,36 @@
 .pubs-section::before {
     content: '' !important;
-    background: url(/static/img/Shubun2.png)!important;
+    background: url(/static/img/Shubun.jpg)!important;
     background-size: contain !important;
     background-position: center !important;
     position: absolute!important;
     width: 7.5cm!important;
     height: 2.5cm!important;
-    top: -1.7cm !important;
+    top: -2.0cm !important;
     right: 0px!important;
     z-index: -3;
     clip-path: polygon(45% 50%, 45% 2%, 100% 2%, 100% 90%, 0 90%, 0 85%);
+    filter: hue-rotate(180deg) contrast(1) brightness(2);
+
 }
 
 .pubs-section::after {
+    content: '' !important;
+    background: url(/static/img/Yangtze.jpg)!important;
+    background-size: 95.8cm 2cm !important;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 180px) 50% !important;
+    position: absolute!important;
+    width: 12cm!important;
+    height: 2.0cm!important;
+    top: -1.8cm !important;
+    right: 0px!important;
+    z-index: -3;
+    clip-path: polygon(50% 42%, 78% 38%, 100% 38%, 100% 90%, 0% 90%, 0 60%, 15% 42%);
+    filter: grayscale(100%) contrast(4) brightness(4);
+}
+
+/* .pubs-section::after {
     content: '' !important;
     background: url(/static/img/Shubun.jpg)!important;
     background-size: contain !important;
@@ -26,7 +44,7 @@
     clip-path: polygon(45% 50%, 45% 2%, 100% 2%, 100% 90%, 0 90%, 0 85%);
     filter: opacity(0.5) grayscale(100%);
     box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset
-}
+} */
 
 @media print {
     .pubs-section::before {

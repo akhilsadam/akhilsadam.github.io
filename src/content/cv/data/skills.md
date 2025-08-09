@@ -13,9 +13,9 @@ Lang
 <span>C#</span>
 <span>CUDA</span>
 <span>Python</span>
-<span>Numba</span>
 <span>PyTorch</span>
 <span>JAX</span>
+<span>Numba</span>
 <span>Java</span>
 <span>RUST</span>
 <span>ROS</span>
@@ -26,7 +26,6 @@ Lang
 <span>MATLAB</span>
 <span>R</span>
 <span>Fortran</span>
-<span>Fathom</span>
 <span>HTML</span>
 <span>CSS</span>
 <span>JS</span>
@@ -44,7 +43,6 @@ Build
 <div class="skill_list" markdown="1">
 <span>VSCode</span>
 <span>Visual Studio</span>
-<span>Cursor</span>
 <span>Jupyter</span>
 <span>Make</span>
 <span>CMake</span>
@@ -80,10 +78,10 @@ Linux
 <div class="skill_list" markdown="1">
 <span>Ubuntu</span>
 <span>Debian</span>
+<span>Windows Subsystem for Linux</span>
 <span>MS Hypervisor</span>
 <span>VirtualBox</span>
 <span>VMWare Player</span>
-<span>Windows Subsystem for Linux</span>
 </div>
 </div>
 
@@ -137,13 +135,12 @@ CAD
 Music
 </div>
 <div class="skill_list" markdown="1">
-<span>MuseScore</span>
 <span>FL Studio</span>
 <span>Ableton Live Lite</span>
-<span>Cakewalk</span>
-<span>Reaper</span>
+<span>MuseScore</span>
 <span>Kontakt</span>
 <span>Reaktor</span>
+<span>Piano</span>
 </div>
 </div>
 
@@ -222,14 +219,17 @@ NLang
 
 <div class="interests" markdown="1"> 
 
-- Deep Learning MCMC Surrogates
-- Inverse Problems and UQ
-- Physics Simulations
+- Deep Learning Architecture
+- SciML, Surrogate Models
+- Inverse Problems, Imaging, UQ
+- Raytracing, MCMC Physics
+- Neural Operators, CFD
+- Deep Compression AEs
+- Implicit Neural Representations
+- Diffusion, CycleGAN, NLP
 - Procedural World / Game Dev
 - Photogrammetry, CAD, and BIM
-- Music Scoring and Production
-- Natural Language Processing
+- Music Scoring, Production, Piano
 - Classical Literature and VNs
-- Piano
 
 </div>
