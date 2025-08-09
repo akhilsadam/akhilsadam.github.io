@@ -1,16 +1,19 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <link rel="stylesheet" href="/main-1b84e8f808dd6615.css">
+    <link rel="stylesheet" href="/main-ef2eb92dceb4393.css" integrity="sha384-A0V6NEUGGl10zVxaGVk25tcF5pRuMkZVJSKGVrGPyiKrgPN6BG95O2mIF4GNyFyo"/>
     
     <script src="https://kit.fontawesome.com/517b442cc3.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./static/js/ext/soundcloud.cjs"></script>
     <title>nighttime cherry blossoms</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <style>
         @font-face {
             font-family: 'Kiona';
@@ -43,7 +46,7 @@
             }
         };
     </script>
-    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     <!-- <script id="MathJax-script" async src="/static/js/ext/mathjax.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
     <script async src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
@@ -117,9 +120,7 @@
             slideParent.dataset.index = slideIndex;
         }
     </script>
-
-<link rel="preload" href="/frontend-f961d89e90dc3985_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/frontend-f961d89e90dc3985.js"></head>
+<link rel="modulepreload" href="/frontend-f6aff4f90df77757.js" crossorigin="anonymous" integrity="sha384-AMFZybUoWpmVjtVmCoX3Q3DK7Y8vmCcU17anIVs1xd0J8i2+3ZN+bCm/jrb5J4OM"><link rel="preload" href="/frontend-f6aff4f90df77757_bg.wasm" crossorigin="anonymous" integrity="sha384-j/NkPojk1EnrS6wZbo9+VBOS+D41lacOHRxywyglyTeHiNAsm/FmvsJFoD6/wtpi" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- Start Single Page Apps for GitHub Pages -->
@@ -147,5 +148,16 @@
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
 
+<script type="module">
+import init, * as bindings from '/frontend-f6aff4f90df77757.js';
+const wasm = await init({ module_or_path: '/frontend-f6aff4f90df77757_bg.wasm' });
 
-<script type="module">import init from '/frontend-f961d89e90dc3985.js';init('/frontend-f961d89e90dc3985_bg.wasm');</script></body></html>
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+
+</html>
