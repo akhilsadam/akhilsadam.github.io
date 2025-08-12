@@ -181,12 +181,16 @@ div.items {
     font-variant: small-caps;
 }
 
-.pub_title,
+.pub_title {
+    /* color: var(--accent-color); */
+    font: var(--kotoba);
+}
+
+.pub_title a,
 .pub_journal {
     color: var(--accent-color);
     font: var(--kotoba);
 }
-
 
 /* .cv>* {
     aspect-ratio: 1.0;
@@ -445,10 +449,15 @@ div.appendix {
         /* outline: none; */
     }
     .pubs-section {
-        width: 11.7cm !important; /*11.7*/
+        width: 12cm !important; /*11.7*/
         right: 0px !important;
         position: relative;
+        padding-bottom: 1cm;
     }
+    /* .pub-row {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    } */
     .reach-section {
         text-align: left;
         width: 7.5cm !important;
@@ -583,6 +592,12 @@ div.appendix {
     .edu-section .edu ul {
         margin-left: 4mm !important;
         margin-bottom: 0px !important;
+    }
+    .interests ul li{
+        font-size: 100%;
+    }
+    .edu-section li{
+        font-size: 125%;
     }
     #optional {
         display: none;

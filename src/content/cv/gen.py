@@ -4,7 +4,7 @@ import pandas as pd
 pwd = os.getcwd()
 cwd = pwd + '/src/content/cv'
 dwd = cwd + '/data'
-# make publications
+# make publicationse
 data = pd.read_csv(dwd + "/citations.csv", quotechar='"', skipinitialspace=True).to_numpy()
 
 maxn = 10
@@ -15,14 +15,24 @@ journal = data[:,2]
 year = data[:,6]
 unpublished = np.array([isinstance(data[:,7][i], float) for i in range(len(data[:,7]))])
 
+doi = data[:,-2]
+doi = np.where(pd.isna(doi), '', doi)
+print(doi)
+has_doi = np.array([len(d) > 0 for d in doi])
+
 fauthor = np.array([np.where(np.array(a.split('; ')) == 'Sadam, Akhil')[0][0] != 0 for a in author])
 
-ind = np.lexsort((unpublished,fauthor,-year)) # most important is last here
+upcoming = np.array(['upcoming' not in j for j in journal])
+print(upcoming.shape)
+
+ind = np.lexsort((upcoming, unpublished,fauthor,-year)) # most important is last here
  
 author = author[ind][:maxn]
 title = title[ind][:maxn]
 journal = journal[ind][:maxn]
 year = year[ind][:maxn]
+doi = doi[ind][:maxn]
+has_doi = has_doi[ind][:maxn]
 
 maxl=55
 maxp=27
@@ -51,8 +61,14 @@ def trim(out, maxql=maxl):
         out = " ".join(getlast(out.split(' '),maxql)) + "..."
     return out
 
+def url(out, doi, hasdoi):
+    if hasdoi:
+        return f'<a href="{doi}" target="_blank">{out}</a>'
+    else:
+        return out
+
 # print(author, title, journal, year)
-def format(i, a, t, j, y):
+def format(i, a, t, j, y, d, hd):
     return f"""
 <div class="pub_{i}" id="pub" markdown="1">      
     <div class="cv_left_two">            
@@ -60,7 +76,7 @@ def format(i, a, t, j, y):
             {renameauthor(a)}
         </div>
         <div class="pub_title">
-            {trim(t)}
+            {url(trim(t), d, hd)}
         </div>
     </div>
     <div class="cv_right_two">            
@@ -74,7 +90,7 @@ def format(i, a, t, j, y):
 </div>
 """
 
-out = "\n".join([format(i, a, t, j, y) for i, (a, t, j, y) in enumerate(zip(author, title, journal, year))])
+out = "\n".join([format(i, a, t, j, y, d, hd) for i, (a, t, j, y, d, hd) in enumerate(zip(author, title, journal, year, doi, has_doi))])
 
 out = f""" 
 <div class="poster-section poster-scols avoid-break pubs-section" markdown="1">
@@ -147,18 +163,18 @@ def skillformat(t, l,lopt):
 
 inner = "\n".join([skillformat(t, hash[t],hash2[t]) for t in types_noin])
 inner2 = "\n".join([f'- {i}' for i in interests])
+
+#  
 out = f"""
 
 # <i class="fa fa-tasks" aria-hidden="true"></i> technical
 
 """ + inner + """
 
-<hr>
-
 <div class="interests" markdown="1"> 
 
 """ + inner2 + """
-
+<br>
 </div>
 """
 with open(dwd + '/skills.md', 'w') as f:

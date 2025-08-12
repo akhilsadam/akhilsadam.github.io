@@ -215,8 +215,6 @@ NLang
 </div>
 
 
-<hr>
-
 <div class="interests" markdown="1"> 
 
 - Deep Learning Architecture
@@ -231,5 +229,5 @@ NLang
 - Photogrammetry, CAD, and BIM
 - Music Scoring, Production, Piano
 - Classical Literature and VNs
-
+<br>
 </div>

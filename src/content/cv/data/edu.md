@@ -1,15 +1,15 @@
 <div class="poster-section poster-scols avoid-break rtl-section rxp edu-section" markdown="1">
 
-
+<!-- <div id="optional" markdown="1"> -->
 
 # Education
 
-<div id="optional" markdown="1">
-</div>
+<!-- </div> -->
 
 <div id="rxp" class="edu" markdown="1">
 
-## Computational Science and Engineering (CSE) PhD at the Massachusetts Institute of Technology
+## Computational Science and Engineering (CSE) PhD at MIT
+<!-- the Massachusetts Institute of Technology -->
 
 <div class="accent ltab flex-row">
 <span class="GPA">5.0/5.0</span>
@@ -18,20 +18,23 @@
 <span class="date_two">Now</span>
 </span>
 </div>
-<div id="optional" markdown="1"> 
 
- - Information Theory: From Coding to Learning
- - Diffusion Models: From Theory to Practice
+ <!-- - Information Theory : From Coding to Learning -->
+ - Information Theory
+ <!-- - Diffusion Models: From Theory to Practice -->
+ - Diffusion Models
  - Analysis and Manifolds 
  - Deep Learning
  - Numerical Fluid Dynamics
- - Introduction to Numerical Methods
+ - Intro to Numerical Methods
 
+<div id="optional" markdown="1"> 
 </div>
 </div>
 <div id="rxp" class="edu" markdown="1">
 
-## Undergraduate in CSE at The University of Texas at Austin
+## Undergraduate in CSE at UT Austin
+<!-- The University of Texas at Austin -->
 
 <div class="accent ltab flex-row">
 <span class="GPA">4.0/4.0</span>

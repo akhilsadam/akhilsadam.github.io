@@ -48,7 +48,7 @@
 
 <div id="resume" markdown="1">
 
----
+<hr style="margin: 0px !important;">
 
 [pyinclude](edu.md)
 
@@ -71,7 +71,7 @@
 </div>
 
 
-<div class="flex-row" markdown="1">
+<div class="flex-row pub-row" markdown="1">
 
 [pyinclude](hon.md)
 

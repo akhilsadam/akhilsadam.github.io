@@ -3,13 +3,13 @@
 <div class="poster-section poster-scols avoid-break hon-section" markdown="1">
 
 
-| Honors | Date | Rank | Detail |
+| Honors | Date | Rank | Topic /  Notes |
 |--------|------|------|-------|
-Oden Institute Moncrief Intern|Sum 2023|-|Comp. Engr. And Science.|
+Oden Institute Moncrief Intern|Sum 2023||Comp. Engr. And Science.|
 UT Austin Bennett Competition|Fall 2020|4|Calculus|
 OPhO (Online Physics Olympiad)|Sum 2020|34/340|2-person team, international|
 USAPhO (USA Physics Olympiad)|Spr 2020, 19|Qual, Bronze|USAPhO 2020 not held|
-USNCO (USA Chemistry Olympiad)|Spr 2020, 19|Semi, Semi|-|
+USNCO (USA Chemistry Olympiad)|Spr 2020, 19|Semi, Semi||
 AAPT Physics Bowl|Spr 2018|2 (Region)|Am. Assoc. Physics Teach.|
 AIME|Spr 2016, 18|Qual, Qual|Am. Invite. Math. Exam|
 President's Honor Roll (ACC)|Fall 2016 - Spr 2020||Austin Community College|
@@ -19,7 +19,7 @@ University of Houston Math & Science|Fall 2018, 18, 17|1,1,2|Physics, Calculus, 
 
 
 
-| Honors | Date | Rank | Detail |
+| Honors | Date | Rank | Topic /  Notes |
 |--------|------|------|-------|
 MIT BWSI: Autonomous Air Race|Sum 2018|3||
 AP Scholar|Spr 2019|Distinction & Honors||
