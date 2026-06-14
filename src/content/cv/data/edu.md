@@ -120,7 +120,7 @@
 
 <div id="rxp" class="srvc flex-col-dir" markdown="1">
 
-- ICML Workshop Reviewer <span class="date right">2026</span>
+- SPIGM ICML (Workshop) Reviewer <span class="date right">2026</span>
 - Numerical Fluid Mechanics TA <span class="date right">2026</span>
 - MIT SGI Mentor <span class="date right">2026</span>
 - MIT RSI Mentor <span class="date right">2025-26</span>
