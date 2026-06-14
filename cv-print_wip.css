@@ -1,0 +1,51 @@
+@media print {
+    
+
+
+.avoid-break { page-break-inside:auto !important; }
+
+    #pub,
+    #rxp {
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+    }
+    .skill_NLang .label { display: none; }
+        .skill {
+        font-size: 100% !important;
+    }
+    .interests ul {
+                font-size: 100% !important;
+
+    }
+    #pub {
+        font-size: 100% !important;
+    }
+    @page {
+        width: 215.9mm;
+        height: 279.4mm;
+        margin: 5mm 0 0 0 !important;
+        background-color: none;
+    }
+    * {
+        page-break-inside: auto !important;
+        page-break-after: auto !important;
+        page-break-before: auto !important;
+    }
+    :root {
+        background: none !important;
+        background-color: white !important;
+    }
+    .cv-title {
+        visibility: hidden;
+    }
+    .header { display: block; }
+    .profile {
+        display: block;
+        position: absolute;
+        top: 2mm;
+        left: calc(2mm + 1cm);
+        width: 1.5cm;
+        height: 1.5cm;
+        border-radius: 50%;
+    }
+}

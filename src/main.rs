@@ -31,6 +31,9 @@ enum Route {
     #[at("/cv")]
     Cv,
 
+    #[at("/resume")]
+    Resume,
+
     #[at("/projects/*mdpath")]
     Project { mdpath: String},
 
@@ -72,6 +75,7 @@ fn switch(route: Route) -> Html {
         Route::Arch => projects::arch(),
         Route::NotFound => projects::default::notfound(),
         Route::Cv => projects::cv(),
+        Route::Resume => projects::resume(),        
     }
 }
 

@@ -52,6 +52,14 @@ pub fn cv() -> Html
     md_gen(&data)
 }
 
+pub fn resume() -> Html
+{
+    let data = include_str!("../content/cv/resume.md");
+    // let file_loc = "/static/md/content/cv/cv.md";
+    // let data = default::get_string_from_file(&file_loc).unwrap();
+    md_gen(&data)
+}
+
 
 pub fn art() -> Html
 {

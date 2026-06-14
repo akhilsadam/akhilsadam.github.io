@@ -30,7 +30,7 @@ nighttime cherry blossoms
 &nbsp;
 akhil.sadam@utexas.edu
 </a> -->
-<div class="flex-col">
+<div class="flex-col-start" style="line-height: 1.1;">
 
 <a href="a1744874@mit.edu">
 <i class="fa fa-envelope" aria-hidden="true"></i>

@@ -17,3 +17,6 @@ for line in data.split('\n'):
         
 with open(cwd + '/cv.md', 'w') as f:
     f.write('\n'.join(lines))
+    
+with open(cwd + '/resume.md', 'w') as f:
+    f.write('\n'.join(lines).replace('cv-print', 'resume-print'))

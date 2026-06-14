@@ -7,7 +7,7 @@ dwd = cwd + '/data'
 # make publicationse
 data = pd.read_csv(dwd + "/citations.csv", quotechar='"', skipinitialspace=True).to_numpy()
 
-maxn = 10
+maxn = 11
 
 author = data[:,0]
 title = data[:,1]
@@ -22,8 +22,10 @@ has_doi = np.array([len(d) > 0 for d in doi])
 
 fauthor = np.array([np.where(np.array(a.split('; ')) == 'Sadam, Akhil')[0][0] != 0 for a in author])
 
-upcoming = np.array(['upcoming' not in j for j in journal])
+upcoming = np.array(['in-prep' not in j for j in journal])
 print(upcoming.shape)
+modifiers = ['(in-prep)','(sub-judice)','Abstracts']
+
 
 ind = np.lexsort((upcoming, unpublished,fauthor,-year)) # most important is last here
  
@@ -34,8 +36,11 @@ year = year[ind][:maxn]
 doi = doi[ind][:maxn]
 has_doi = has_doi[ind][:maxn]
 
-maxl=55
-maxp=27
+# maxl=55
+# maxp=27
+maxl_aut=65
+maxl=80
+maxp=30
 
 def getlast(l,maxa):
     counts = np.cumsum([len(a) for a in l])
@@ -52,8 +57,8 @@ def renameauthor(al):
     aq = al.split('; ')[:-1]
     out = ", ".join([f"{a.split(',')[1][1]} {a.split(',')[0]}" for a in aq])
     print(out)
-    if len(out) > maxl:
-        out = ", ".join(getlast(out.split(', '),maxl)) + "..."
+    if len(out) > maxl_aut:
+        out = ", ".join(getlast(out.split(', '),maxl_aut)) + "..."
     return out
 
 def trim(out, maxql=maxl):
@@ -69,6 +74,16 @@ def url(out, doi, hasdoi):
 
 # print(author, title, journal, year)
 def format(i, a, t, j, y, d, hd):
+    mod = False
+    for m in modifiers:
+        if m in j:
+            j0, j1 = j.split(m)
+            j = f'{j0}<br>{m}{trim(j1, maxp//2)}'
+            mod = True
+            break
+        
+    if not mod:
+        j = trim(j, maxp)
     return f"""
 <div class="pub_{i}" id="pub" markdown="1">      
     <div class="cv_left_two">            
@@ -81,7 +96,7 @@ def format(i, a, t, j, y, d, hd):
     </div>
     <div class="cv_right_two">            
         <span class="pub_journal">
-            {trim(j, maxp)}
+            {j}
         </span>
         <span class="pub_year">
             {y}
@@ -167,14 +182,15 @@ inner2 = "\n".join([f'- {i}' for i in interests])
 #  
 out = f"""
 
-# <i class="fa fa-tasks" aria-hidden="true"></i> technical
+# <i class="fa fa-tasks" aria-hidden="true"></i> Technical
 
 """ + inner + """
+
+# <i class="fa-solid fa-server" aria-hidden="true"></i> Interests
 
 <div class="interests" markdown="1"> 
 
 """ + inner2 + """
-<br>
 </div>
 """
 with open(dwd + '/skills.md', 'w') as f:

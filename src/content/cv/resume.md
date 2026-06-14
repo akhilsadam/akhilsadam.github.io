@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/static/css/phogroup.css">
 <link rel="stylesheet" href="/static/css/layout-poster.css">
 <link rel="stylesheet" href="/static/css/shubun.css">
-<link rel="stylesheet" href="/static/css/cv-print.css">
+<link rel="stylesheet" href="/static/css/resume-print.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div>

@@ -1,7 +1,7 @@
 <!---this file is generated from skills.csv -->
 
 
-# <i class="fa fa-tasks" aria-hidden="true"></i> technical
+# <i class="fa fa-tasks" aria-hidden="true"></i> Technical
 
 
 <div class="skill_Lang" id="skill" markdown="1">
@@ -16,6 +16,7 @@ Lang
 <span>PyTorch</span>
 <span>JAX</span>
 <span>Numba</span>
+<span>CuPy</span>
 <span>Java</span>
 <span>RUST</span>
 <span>ROS</span>
@@ -60,12 +61,10 @@ Build
 Deploy
 </div>
 <div class="skill_list" markdown="1">
-<span>TACC</span>
 <span>Docker</span>
 <span>Kubernetes</span>
 <span>Redis</span>
-<span>Flask</span>
-<span>Dash</span>
+<span>Flask/Dash</span>
 <span>WASM</span>
 </div>
 </div>
@@ -77,11 +76,9 @@ Linux
 </div>
 <div class="skill_list" markdown="1">
 <span>Ubuntu</span>
-<span>Debian</span>
-<span>Windows Subsystem for Linux</span>
-<span>MS Hypervisor</span>
-<span>VirtualBox</span>
-<span>VMWare Player</span>
+<span>WSL</span>
+<span>Debian/RHEL</span>
+<span>HyperV etc.</span>
 </div>
 </div>
 
@@ -92,11 +89,9 @@ World
 </div>
 <div class="skill_list" markdown="1">
 <span>Unity</span>
-<span>Substance Painter</span>
-<span>Designer</span>
-<span>Alchemist</span>
-<span>Quixel</span>
+<span>Substance</span>
 <span>Meshroom</span>
+<span>Blender</span>
 </div>
 </div>
 
@@ -106,12 +101,10 @@ World
 CAD
 </div>
 <div class="skill_list" markdown="1">
-<span>Blender</span>
-<span>Fusion 360</span>
+<span>KLayout</span>
 <span>Solidworks</span>
-<span>Klayout</span>
+<span>Fusion</span>
 <span>Revit</span>
-<span>Enscape</span>
 </div>
 </div>
 
@@ -124,7 +117,6 @@ CAD
 <span>GIMP</span>
 <span>Krita</span>
 <span>Inkscape</span>
-<span>PhotoscapeX</span>
 <span>DaVinci Resolve</span>
 </div>
 </div>
@@ -158,9 +150,9 @@ Report
 </div>
 
 
-<div class="skill_NLang" id="skill" markdown="1">
+<div class="skill_Natl Lang" id="skill" markdown="1">
 <div class="skill_title" markdown="1">
-NLang
+Natl Lang
 </div>
 <div class="skill_list" markdown="1">
 <span>English
@@ -215,19 +207,18 @@ NLang
 </div>
 
 
+# <i class="fa-solid fa-server" aria-hidden="true"></i> Interests
+
 <div class="interests" markdown="1"> 
 
-- Deep Learning Architecture
-- SciML, Surrogate Models
-- Inverse Problems, Imaging, UQ
-- Raytracing, MCMC Physics
-- Neural Operators, CFD
-- Deep Compression AEs
-- Implicit Neural Representations
-- Diffusion, CycleGAN, NLP
-- Procedural World / Game Dev
+- Deep Learning Architecture, SciML
+- World Models, Generative Modeling
+- Self-Supervised & Implicit Reps.
+- Deep-Compression Autoencoders
+- Inverse Problems, Imaging, Raytracing
+- CFD, MCMC Physics, Nanotechnology
+- Procedural Game Dev, Agents, NLP
 - Photogrammetry, CAD, and BIM
 - Music Scoring, Production, Piano
 - Classical Literature and VNs
-<br>
 </div>

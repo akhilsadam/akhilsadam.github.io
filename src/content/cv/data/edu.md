@@ -1,8 +1,8 @@
 <div class="poster-section poster-scols avoid-break rtl-section rxp edu-section" markdown="1">
 
-<!-- <div id="optional" markdown="1"> -->
+<!-- <div id="optional" markdown="1"> fa fa-tasks -->
 
-# Education
+# <i class="fa-solid fa-server" aria-hidden="true"></i> Education
 
 <!-- </div> -->
 
@@ -20,12 +20,15 @@
 </div>
 
  <!-- - Information Theory : From Coding to Learning -->
- - Information Theory
  <!-- - Diffusion Models: From Theory to Practice -->
- - Diffusion Models
+ 
+ - [Diffusion Models](https://hackmd.io/vHEEDpPOTmex1O4zFeMYTw), [Multimodal AI](https://mit-mi.github.io/mmai-course/spring2026/)
+ - [Advances in Computer Vision](https://scenerepresentations.org/courses/2026/spring/advances-in-cv/)
+  - [Accelerated Computing (CUDA)](https://accelerated-computing.academy/fall25/)
+ - [Numerical Fluid Mechanics](https://web.mit.edu/2.29/www/)
+ - [Deep Learning](https://phillipi.github.io/6.7960/), [Information Theory](https://people.lids.mit.edu/yp/homepage/6_7480.html)
  - Analysis and Manifolds 
- - Deep Learning
- - Numerical Fluid Dynamics
+
  - Intro to Numerical Methods
 
 <div id="optional" markdown="1"> 
@@ -108,5 +111,66 @@
  - AP Biology, AP Calculus BC, AP Computer Science, AP Physics C Mech, AP Physics C E&M, AP Statistics, AP Chemistry	 		
 
 </div>
+</div>
+
+# <i class="fa-solid fa-server" aria-hidden="true"></i> Service
+
+<div id="rxp" class="srvc flex-col-dir" markdown="1">
+
+- ICML Workshop Reviewer <span class="date right">2026</span>
+- Numerical Fluid Mechanics TA <span class="date right">2026</span>
+- MIT SGI Mentor <span class="date right">2026</span>
+- MIT RSI Mentor <span class="date right">2025-26</span>
+- MIT UROP Mentor <span class="date right">2025-26</span>
+
+</div>
+
+# <i class="fa-solid fa-server" aria-hidden="true"></i> Honors
+
+<div id="rxp" class="edu" markdown="1">
+
+## Competitions
+
+
+- OPhO (Online) <span class="date right">34/340, 2020</span>
+- USAPhO  <span class="date right">Bronze 2019, Qual 2020</span>
+- USNCO <span class="date right">Semi 2019, 2020 </span>
+- UT Austin Bennett <span class="date right">4th, Calculus, 2020</span>
+- AAPT Physics Bowl <span class="date right">2nd, Region, 2018</span>
+- AIME <span class="date right">Qual 2016, 2018 </span>
+- TX Regional Science Bowl <span class="date right">3rd, 2019</span>
+- ACC AMATYC SML <span class="date right">1st, F/S19, F17</span>
+- UH Math & Science <span class="date right">1st Phy, Calc, 2018</span>
+
+## Other
+
+
+- Oden Institute Moncrief Intern <span class="date right">2023</span>
+- Magic Leap Intern <span class="date right">2022</span>
+- UT Austin Highest Honors <span class="date right">2024</span>
+- ACC President's Honor Roll <span class="date right">2016-20</span>
+- MIT BWSI: AAV Air Race <span class="date right">3rd, 2018</span>
+
+
+<!-- President's Honor Roll (ACC)|Fall 2016 - Spr 2020||Austin Community College| -->
+<!-- AMATYC SML (ACC Math)|F/S 19, S18, F/S17, F16|1,1,3,1,2,2|Am. Assoc. of 2Y Colleges| -->
+<!-- University of Houston Math & Science|Fall 2018, 18, 17|1,1,2|Physics, Calculus, Calculus| -->
+
+</div>
+
+<div id="optional" markdown="1">
+
+
+
+| Honors | Date | Rank | Topic /  Notes |
+|--------|------|------|-------|
+MIT BWSI: Autonomous Air Race|Sum 2018|3||
+AP Scholar|Spr 2019|Distinction & Honors||
+Texas Regional Science Bowl|S19, 18, 17, 16, 15|3, 5/6, top quartile|Team|
+Texas State Science Olympiad|Spr 2018, 17|[3,4,5,6], [2,4]|Remote Sensing, Thermo, Optics, Hovercraft, Optics, Hovercraft|
+ABRSM Theory Grade 3 Certification|Fall 2018|Distinction||
+ADMTA|Fall 2018,17|Superior|Jazz-Pop-Rock, Baroque|
+artbyFORM|Fall 2022|V7|community|
+
 </div>
 </div>
