@@ -182,15 +182,21 @@ inner2 = "\n".join([f'- {i}' for i in interests])
 #  
 out = f"""
 
+<div class="block" markdown="1">
+
 # <i class="fa fa-tasks" aria-hidden="true"></i> Technical
 
 """ + inner + """
+
+</div>
+<div class="block" markdown="1">
 
 # <i class="fa-solid fa-server" aria-hidden="true"></i> Interests
 
 <div class="interests" markdown="1"> 
 
 """ + inner2 + """
+</div>
 </div>
 """
 with open(dwd + '/skills.md', 'w') as f:

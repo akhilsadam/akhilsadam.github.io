@@ -1,6 +1,8 @@
 <!---this file is generated from skills.csv -->
 
 
+<div class="block" markdown="1">
+
 # <i class="fa fa-tasks" aria-hidden="true"></i> Technical
 
 
@@ -207,6 +209,9 @@ Natl Lang
 </div>
 
 
+</div>
+<div class="block" markdown="1">
+
 # <i class="fa-solid fa-server" aria-hidden="true"></i> Interests
 
 <div class="interests" markdown="1"> 
@@ -221,4 +226,5 @@ Natl Lang
 - Photogrammetry, CAD, and BIM
 - Music Scoring, Production, Piano
 - Classical Literature and VNs
+</div>
 </div>

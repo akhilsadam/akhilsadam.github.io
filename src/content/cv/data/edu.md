@@ -1,6 +1,7 @@
 <div class="poster-section poster-scols avoid-break rtl-section rxp edu-section" markdown="1">
 
 <!-- <div id="optional" markdown="1"> fa fa-tasks -->
+<div class="block" markdown="1">
 
 # <i class="fa-solid fa-server" aria-hidden="true"></i> Education
 
@@ -112,6 +113,8 @@
 
 </div>
 </div>
+</div>
+<div class="block" markdown="1">
 
 # <i class="fa-solid fa-server" aria-hidden="true"></i> Service
 
@@ -124,6 +127,8 @@
 - MIT UROP Mentor <span class="date right">2025-26</span>
 
 </div>
+</div>
+<div class="block" markdown="1">
 
 # <i class="fa-solid fa-server" aria-hidden="true"></i> Honors
 
@@ -156,6 +161,7 @@
 <!-- AMATYC SML (ACC Math)|F/S 19, S18, F/S17, F16|1,1,3,1,2,2|Am. Assoc. of 2Y Colleges| -->
 <!-- University of Houston Math & Science|Fall 2018, 18, 17|1,1,2|Physics, Calculus, Calculus| -->
 
+</div>
 </div>
 
 <div id="optional" markdown="1">
