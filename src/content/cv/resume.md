@@ -248,7 +248,7 @@
     </div>
     <div class="cv_right_two">            
         <span class="pub_journal">
-            CMAME <br>(in-prep)
+            Journal of Comp. Physics <br>(in-prep)
         </span>
         <span class="pub_year">
             2026
@@ -981,7 +981,7 @@ artbyFORM|Fall 2022|V7|community|
     </div>
     <div class="cv_right_two">            
         <span class="pub_journal">
-            CMAME <br>(in-prep)
+            Journal of Comp. Physics <br>(in-prep)
         </span>
         <span class="pub_year">
             2026

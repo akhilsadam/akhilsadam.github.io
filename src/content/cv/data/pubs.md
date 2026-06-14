@@ -16,7 +16,7 @@
     </div>
     <div class="cv_right_two">            
         <span class="pub_journal">
-            CMAME <br>(in-prep)
+            Journal of Comp. Physics <br>(in-prep)
         </span>
         <span class="pub_year">
             2026
