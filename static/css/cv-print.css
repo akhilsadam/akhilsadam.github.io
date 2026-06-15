@@ -1,0 +1,240 @@
+
+
+
+.flex-col-start {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+
+@media print {
+    .profile {
+        display: block;
+        position: absolute;
+        top: 2.5mm;
+        left: calc(2mm + 1cm);
+        width: 1.5cm;
+        height: 1.5cm;
+        border-radius: 50%;
+    }
+    body { font-size: 60% !important; }
+    .hide { visibility: hidden; }
+    .titles {
+        position: absolute;
+        top: 2mm;
+        left: 25mm;
+        font-weight: 700;
+        font-size: 80%;
+    }
+    .link-section {
+        position: absolute;
+        bottom: 5mm;
+        width: 90%;
+        left: 5%;
+    }
+    .xp-section #rxp { font-size: 90%; }
+    .cv_left { flex: 0 1 5%; }
+    .cv_right { flex: 1 0 95%; }
+    .cv_left_two {
+        flex: 1 1 auto;      /* Grow and shrink dynamically based on text length */
+        min-width: 0;        /* Critical: allows flex item to shrink below content width */
+        max-width: 90%;
+        white-space: nowrap; /* Forces the title and author to stay on a single line */
+        overflow: hidden;    /* Optional: crops text if it absolutely runs out of space */
+        text-overflow: ellipsis; /* Optional: adds "..." if the title gets cropped */
+    }
+    .cv_right_two {
+        flex: 1 1 auto;      /* Grow and shrink dynamically alongside the left section */
+        min-width: 10%;    /* Prevents the journal from getting completely crushed */
+        max-width: 25%;
+        white-space: normal; /* Allows the journal and date to wrap up to two lines */
+    }
+    .rxp-section {
+        position: relative;
+        flex: 0 1 70%;
+    }
+    .skill {
+        width: 30% !important;
+        flex: 0 1 30%;
+    }
+    .interests ul {
+        columns: 1;
+        margin: 0;
+        line-height: 1.1;
+    }
+    .poster-column {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    .fullscreen { display: none; }
+    @page {
+        width: 215.9mm;
+        height: 279.4mm;
+        margin: 5mm 0 0 0 !important;
+        background-color: none;
+    }
+    header { display: none; }
+    .huge {
+        margin: 5mm;
+        margin-top: 0 !important;
+    }
+    #skill {
+        display: block;
+        margin-right: 2mm;
+    }
+    .skill hr {
+        margin: 1mm 0 !important;
+        height: 2mm !important;
+    }
+    .skill_title {
+        display: inline;
+        text-align: left;
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+        font-weight: 700;
+    }
+    .skill_list span {
+        word-break: keep-all;
+        margin: 0 2px;
+    }
+    .skill_Natl.Lang .radial-bar { display: none !important; }
+    div.items { padding: 2px; }
+    .pubs-section {
+        /* width: 12cm !important; */
+        right: 0 !important;
+        position: relative;
+        /* padding-bottom: 1cm; */
+    }
+    .reach-section, .add-section {
+        text-align: left;
+        width: 7.5cm !important;
+        margin-left: 0.05cm !important;
+        margin-right: 0 !important;
+        position: relative;
+    }
+    .about-section {
+        width: 8.5cm !important;
+        margin-right: 0.5cm !important;
+        position: relative;
+    }
+    table th, table td {
+        margin: 0 !important;
+        padding: 0 2px !important;
+        border: none;
+        border-style: hidden!important;
+        border-spacing: 2px !important;
+        color: #000;
+        background-color: white !important;
+    }
+    table th {
+        font: Comfortaa;
+        size: 100% !important;
+    }
+    table {
+        border-collapse: collapse;
+        background-color: white !important;
+    }
+    .hon-section {
+        margin: 0;
+        margin-top: 0.1mm;
+        padding: 0;
+        font-size: 100%;
+        height: min-content;
+        width: 7.5cm !important;
+        line-height: 1.4;
+    }
+    .hon-section table { border: none !important; }
+    .hon-section tr { display: grid; grid-template-columns: 1fr 3cm; }
+    .hon-section td:nth-child(1), .hon-section th:nth-child(1) { order: 1; }
+    .hon-section td:nth-child(2), .hon-section th:nth-child(2) { order: 2; }
+    .hon-section th:nth-child(3), .hon-section td:nth-child(3) {
+        order: 4;
+        padding-left: 2mm !important;
+    }
+    .hon-section th:nth-child(4), .hon-section td:nth-child(4) {
+        order: 3;
+        padding-left: 2mm !important;
+    }
+    .edu-section {
+        width: 5.5cm !important;
+        left: 0 !important;
+        position: relative;
+    }
+    .xp-section #rxp, .reach-section #rxp {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        line-height: 0.8 !important;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .xp-section #rxp .cv_left, .reach-section #rxp .cv_left {
+        display: inline-flex;
+        direction: ltr;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .xp-section #rxp .cv_left { flex: 0 1 45%; }
+    .reach-section #rxp .cv_left { flex: 1 1 45%; }
+    .xp-section #rxp .cv_left>*, .reach-section #rxp .cv_left>* {
+        margin: 0;
+        margin-right: 2mm;
+    }
+    .xp-section #rxp .cv_right, .reach-section #rxp .cv_right {
+        display: inline;
+        flex: 1 1 55%;
+    }
+    .xp-section #rxp .cv_right>ul, .reach-section #rxp .cv_right>ul {
+        margin-left: 2mm !important;
+        margin-bottom: 0 !important;
+    }
+    .edu-section .edu ul, .edu-section .srvc ul {
+        margin-left: 2mm !important;
+        margin-bottom: 0 !important;
+    }
+    .edu-section h1 {
+        margin-top:4px;
+    }
+    .interests ul li { 
+        margin-left: 4mm !important;
+        font-size: 11px !important; 
+    }
+    .srvc ul {
+        width: 100%;
+    }
+    .edu-section li { font-size: 11px !important }
+    #pub {
+        margin: 2px 0; 
+        /* TODO change if more pubs */
+    }
+    #optional { display: none; }
+    #resume { display: block; }
+    * {
+        page-break-inside: avoid !important;
+        page-break-after: avoid !important;
+        page-break-before: avoid !important;
+    }
+    :root {
+        background: none !important;
+        background-color: white !important;
+    }
+
+    .edu p {
+        margin-bottom: 0px;
+    }
+
+    .pubs-section h1 {
+        text-transform: lowercase;
+    }
+}
