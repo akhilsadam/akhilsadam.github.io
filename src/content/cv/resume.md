@@ -240,6 +240,26 @@
 <div class="pub_0" id="pub" markdown="1">      
     <div class="cv_left_two">            
         <div class="pub_auth">
+            A Babu, A Sadam, P Lermusiaux
+        </div>
+        <div class="pub_title">
+            <a href="https://doi.org/10.1029/2025MS005324" target="_blank">Guided Unconditional and Conditional Generative Models for Super-Resolution and Inference...</a>
+        </div>
+    </div>
+    <div class="cv_right_two">            
+        <span class="pub_journal">
+            JAMES
+        </span>
+        <span class="pub_year">
+            2026
+        </span>
+    </div>  
+</div>
+
+
+<div class="pub_1" id="pub" markdown="1">      
+    <div class="cv_left_two">            
+        <div class="pub_auth">
             A Sadam, A Babu, P Lermusiaux
         </div>
         <div class="pub_title">
@@ -257,7 +277,7 @@
 </div>
 
 
-<div class="pub_1" id="pub" markdown="1">      
+<div class="pub_2" id="pub" markdown="1">      
     <div class="cv_left_two">            
         <div class="pub_auth">
             A Babu, A Sadam, P Lermusiaux
@@ -277,7 +297,7 @@
 </div>
 
 
-<div class="pub_2" id="pub" markdown="1">      
+<div class="pub_3" id="pub" markdown="1">      
     <div class="cv_left_two">            
         <div class="pub_auth">
             A Babu, A Sadam, P Lermusiaux
@@ -297,24 +317,47 @@
 </div>
 
 
-<div class="pub_3" id="pub" markdown="1">      
+<div class="pub_5" id="pub" markdown="1">      
     <div class="cv_left_two">            
         <div class="pub_auth">
             A Babu, A Sadam, P Lermusiaux
         </div>
         <div class="pub_title">
-            <a href="https://doi.org/10.1029/2025MS005324" target="_blank">Guided Unconditional and Conditional Generative Models for Super-Resolution and Inference...</a>
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11245082" target="_blank">Evaluation of Analytical Turbulence Closures for Quasi-Geostrophic Ocean Flows with...</a>
         </div>
     </div>
     <div class="cv_right_two">            
         <span class="pub_journal">
-            JAMES
+            IEEE Oceans
         </span>
         <span class="pub_year">
-            2026
+            2025
         </span>
     </div>  
 </div>
+
+
+<div class="pub_7" id="pub" markdown="1">      
+    <div class="cv_left_two">            
+        <div class="pub_auth">
+            C Layden, K Klein, W Matava, A Sadam, F Abouzahr, M Proga, S Majewski, J Nuyts...
+        </div>
+        <div class="pub_title">
+            <a href="https://doi.org/10.1088/2057-1976/ac4f0a" target="_blank">Design and modeling of a high resolution and high sensitivity PET brain scanner with...</a>
+        </div>
+    </div>
+    <div class="cv_right_two">            
+        <span class="pub_journal">
+            Biomedical Physics & Engineering...
+        </span>
+        <span class="pub_year">
+            2022
+        </span>
+    </div>  
+</div>
+
+
+# Abstracts and Presentations
 
 
 <div class="pub_4" id="pub" markdown="1">      
@@ -329,26 +372,6 @@
     <div class="cv_right_two">            
         <span class="pub_journal">
             SIAM GS25 & 18th USNCCM
-        </span>
-        <span class="pub_year">
-            2025
-        </span>
-    </div>  
-</div>
-
-
-<div class="pub_5" id="pub" markdown="1">      
-    <div class="cv_left_two">            
-        <div class="pub_auth">
-            A Babu, A Sadam, P Lermusiaux
-        </div>
-        <div class="pub_title">
-            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11245082" target="_blank">Evaluation of Analytical Turbulence Closures for Quasi-Geostrophic Ocean Flows with...</a>
-        </div>
-    </div>
-    <div class="cv_right_two">            
-        <span class="pub_journal">
-            IEEE Oceans
         </span>
         <span class="pub_year">
             2025
@@ -377,7 +400,7 @@
 </div>
 
 
-<div class="pub_7" id="pub" markdown="1">      
+<div class="pub_8" id="pub" markdown="1">      
     <div class="cv_left_two">            
         <div class="pub_auth">
             A Sadam, C Layden, K Klein, W Matava, K Lang
@@ -389,26 +412,6 @@
     <div class="cv_right_two">            
         <span class="pub_journal">
             APS April Meeting <br>Abstracts
-        </span>
-        <span class="pub_year">
-            2022
-        </span>
-    </div>  
-</div>
-
-
-<div class="pub_8" id="pub" markdown="1">      
-    <div class="cv_left_two">            
-        <div class="pub_auth">
-            C Layden, K Klein, W Matava, A Sadam, F Abouzahr, M Proga, S Majewski, J Nuyts...
-        </div>
-        <div class="pub_title">
-            <a href="https://doi.org/10.1088/2057-1976/ac4f0a" target="_blank">Design and modeling of a high resolution and high sensitivity PET brain scanner with...</a>
-        </div>
-    </div>
-    <div class="cv_right_two">            
-        <span class="pub_journal">
-            Biomedical Physics & Engineering...
         </span>
         <span class="pub_year">
             2022
@@ -906,7 +909,7 @@ Natl Lang
 
 <div id="rxp" class="srvc flex-col-dir" markdown="1">
 
-- ICML Workshop Reviewer <span class="date right">2026</span>
+- SPIGM ICML (Workshop) Reviewer <span class="date right">2026</span>
 - Numerical Fluid Mechanics TA <span class="date right">2026</span>
 - MIT SGI Mentor <span class="date right">2026</span>
 - MIT RSI Mentor <span class="date right">2025-26</span>
@@ -985,6 +988,26 @@ artbyFORM|Fall 2022|V7|community|
 <div class="pub_0" id="pub" markdown="1">      
     <div class="cv_left_two">            
         <div class="pub_auth">
+            A Babu, A Sadam, P Lermusiaux
+        </div>
+        <div class="pub_title">
+            <a href="https://doi.org/10.1029/2025MS005324" target="_blank">Guided Unconditional and Conditional Generative Models for Super-Resolution and Inference...</a>
+        </div>
+    </div>
+    <div class="cv_right_two">            
+        <span class="pub_journal">
+            JAMES
+        </span>
+        <span class="pub_year">
+            2026
+        </span>
+    </div>  
+</div>
+
+
+<div class="pub_1" id="pub" markdown="1">      
+    <div class="cv_left_two">            
+        <div class="pub_auth">
             A Sadam, A Babu, P Lermusiaux
         </div>
         <div class="pub_title">
@@ -1002,7 +1025,7 @@ artbyFORM|Fall 2022|V7|community|
 </div>
 
 
-<div class="pub_1" id="pub" markdown="1">      
+<div class="pub_2" id="pub" markdown="1">      
     <div class="cv_left_two">            
         <div class="pub_auth">
             A Babu, A Sadam, P Lermusiaux
@@ -1022,7 +1045,7 @@ artbyFORM|Fall 2022|V7|community|
 </div>
 
 
-<div class="pub_2" id="pub" markdown="1">      
+<div class="pub_3" id="pub" markdown="1">      
     <div class="cv_left_two">            
         <div class="pub_auth">
             A Babu, A Sadam, P Lermusiaux
@@ -1042,24 +1065,47 @@ artbyFORM|Fall 2022|V7|community|
 </div>
 
 
-<div class="pub_3" id="pub" markdown="1">      
+<div class="pub_5" id="pub" markdown="1">      
     <div class="cv_left_two">            
         <div class="pub_auth">
             A Babu, A Sadam, P Lermusiaux
         </div>
         <div class="pub_title">
-            <a href="https://doi.org/10.1029/2025MS005324" target="_blank">Guided Unconditional and Conditional Generative Models for Super-Resolution and Inference...</a>
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11245082" target="_blank">Evaluation of Analytical Turbulence Closures for Quasi-Geostrophic Ocean Flows with...</a>
         </div>
     </div>
     <div class="cv_right_two">            
         <span class="pub_journal">
-            JAMES
+            IEEE Oceans
         </span>
         <span class="pub_year">
-            2026
+            2025
         </span>
     </div>  
 </div>
+
+
+<div class="pub_7" id="pub" markdown="1">      
+    <div class="cv_left_two">            
+        <div class="pub_auth">
+            C Layden, K Klein, W Matava, A Sadam, F Abouzahr, M Proga, S Majewski, J Nuyts...
+        </div>
+        <div class="pub_title">
+            <a href="https://doi.org/10.1088/2057-1976/ac4f0a" target="_blank">Design and modeling of a high resolution and high sensitivity PET brain scanner with...</a>
+        </div>
+    </div>
+    <div class="cv_right_two">            
+        <span class="pub_journal">
+            Biomedical Physics & Engineering...
+        </span>
+        <span class="pub_year">
+            2022
+        </span>
+    </div>  
+</div>
+
+
+# Abstracts and Presentations
 
 
 <div class="pub_4" id="pub" markdown="1">      
@@ -1074,26 +1120,6 @@ artbyFORM|Fall 2022|V7|community|
     <div class="cv_right_two">            
         <span class="pub_journal">
             SIAM GS25 & 18th USNCCM
-        </span>
-        <span class="pub_year">
-            2025
-        </span>
-    </div>  
-</div>
-
-
-<div class="pub_5" id="pub" markdown="1">      
-    <div class="cv_left_two">            
-        <div class="pub_auth">
-            A Babu, A Sadam, P Lermusiaux
-        </div>
-        <div class="pub_title">
-            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11245082" target="_blank">Evaluation of Analytical Turbulence Closures for Quasi-Geostrophic Ocean Flows with...</a>
-        </div>
-    </div>
-    <div class="cv_right_two">            
-        <span class="pub_journal">
-            IEEE Oceans
         </span>
         <span class="pub_year">
             2025
@@ -1122,7 +1148,7 @@ artbyFORM|Fall 2022|V7|community|
 </div>
 
 
-<div class="pub_7" id="pub" markdown="1">      
+<div class="pub_8" id="pub" markdown="1">      
     <div class="cv_left_two">            
         <div class="pub_auth">
             A Sadam, C Layden, K Klein, W Matava, K Lang
@@ -1134,26 +1160,6 @@ artbyFORM|Fall 2022|V7|community|
     <div class="cv_right_two">            
         <span class="pub_journal">
             APS April Meeting <br>Abstracts
-        </span>
-        <span class="pub_year">
-            2022
-        </span>
-    </div>  
-</div>
-
-
-<div class="pub_8" id="pub" markdown="1">      
-    <div class="cv_left_two">            
-        <div class="pub_auth">
-            C Layden, K Klein, W Matava, A Sadam, F Abouzahr, M Proga, S Majewski, J Nuyts...
-        </div>
-        <div class="pub_title">
-            <a href="https://doi.org/10.1088/2057-1976/ac4f0a" target="_blank">Design and modeling of a high resolution and high sensitivity PET brain scanner with...</a>
-        </div>
-    </div>
-    <div class="cv_right_two">            
-        <span class="pub_journal">
-            Biomedical Physics & Engineering...
         </span>
         <span class="pub_year">
             2022
@@ -1329,7 +1335,7 @@ artbyFORM|Fall 2022|V7|community|
 
 <div id="rxp" class="srvc flex-col-dir" markdown="1">
 
-- ICML Workshop Reviewer <span class="date right">2026</span>
+- SPIGM ICML (Workshop) Reviewer <span class="date right">2026</span>
 - Numerical Fluid Mechanics TA <span class="date right">2026</span>
 - MIT SGI Mentor <span class="date right">2026</span>
 - MIT RSI Mentor <span class="date right">2025-26</span>

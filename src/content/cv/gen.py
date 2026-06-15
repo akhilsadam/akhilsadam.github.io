@@ -26,8 +26,11 @@ upcoming = np.array(['in-prep' not in j for j in journal])
 print(upcoming.shape)
 modifiers = ['(in-prep)','(sub-judice)','Abstracts']
 
+presentations = ['Abstracts', 'SIAM GS25']
 
-ind = np.lexsort((upcoming, unpublished,fauthor,-year)) # most important is last here
+ind = np.lexsort((fauthor,~upcoming,unpublished,-year)) # most important is last here
+
+# ABOVE is not ML style, change back later
  
 author = author[ind][:maxn]
 title = title[ind][:maxn]
@@ -35,6 +38,8 @@ journal = journal[ind][:maxn]
 year = year[ind][:maxn]
 doi = doi[ind][:maxn]
 has_doi = has_doi[ind][:maxn]
+
+is_pres = [any(x in j for x in presentations) for j in journal]
 
 # maxl=55
 # maxp=27
@@ -105,14 +110,24 @@ def format(i, a, t, j, y, d, hd):
 </div>
 """
 
-out = "\n".join([format(i, a, t, j, y, d, hd) for i, (a, t, j, y, d, hd) in enumerate(zip(author, title, journal, year, doi, has_doi))])
+pub_items = [format(i, a, t, j, y, d, hd) for i, (a, t, j, y, d, hd) in enumerate(zip(author, title, journal, year, doi, has_doi))]
+
+_pres = [p for i,p in enumerate(pub_items) if is_pres[i]]
+_pubs = [p for i,p in enumerate(pub_items) if not is_pres[i]]
+
+p1 = '\n'.join(_pubs)
+p2 = '\n'.join(_pres)
 
 out = f""" 
 <div class="poster-section poster-scols avoid-break pubs-section" markdown="1">
 
 # Recent Publications
 
-{out}
+{p1}
+
+# Abstracts and Presentations
+
+{p2}
 
 </div>
 """

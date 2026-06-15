@@ -215,7 +215,7 @@
     }
     .edu-section li { font-size: 11px !important }
     #pub {
-        margin: 4px 0; 
+        margin: 2px 0; 
         /* TODO change if more pubs */
     }
     #optional { display: none; }
@@ -232,5 +232,9 @@
 
     .edu p {
         margin-bottom: 0px;
+    }
+
+    .pubs-section h1 {
+        text-transform: lowercase;
     }
 }
