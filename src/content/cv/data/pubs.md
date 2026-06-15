@@ -8,15 +8,15 @@
 <div class="pub_0" id="pub" markdown="1">      
     <div class="cv_left_two">            
         <div class="pub_auth">
-            A Babu, A Sadam, P Lermusiaux
+            A Sadam, A Babu, P Lermusiaux
         </div>
         <div class="pub_title">
-            <a href="https://doi.org/10.1029/2025MS005324" target="_blank">Guided Unconditional and Conditional Generative Models for Super-Resolution and Inference...</a>
+            Fast flow-matching models for high-resolution missing physics closure
         </div>
     </div>
     <div class="cv_right_two">            
         <span class="pub_journal">
-            JAMES
+            Journal of Comp. Physics <br>(in-prep)
         </span>
         <span class="pub_year">
             2026
@@ -28,15 +28,15 @@
 <div class="pub_1" id="pub" markdown="1">      
     <div class="cv_left_two">            
         <div class="pub_auth">
-            A Sadam, A Babu, P Lermusiaux
+            A Babu, A Sadam, P Lermusiaux
         </div>
         <div class="pub_title">
-            Fast flow-matching models for high-resolution missing physics closure
+            Super-resolution-based stochastic generative turbulence closures
         </div>
     </div>
     <div class="cv_right_two">            
         <span class="pub_journal">
-            Journal of Comp. Physics <br>(in-prep)
+            Journal of Fluid Mechanics <br>(in-prep)
         </span>
         <span class="pub_year">
             2026
@@ -56,7 +56,7 @@
     </div>
     <div class="cv_right_two">            
         <span class="pub_journal">
-            Physics Review Fluids <br>(in-prep)
+            Physics Review Fluids <br>(submitted)
         </span>
         <span class="pub_year">
             2026
@@ -71,12 +71,12 @@
             A Babu, A Sadam, P Lermusiaux
         </div>
         <div class="pub_title">
-            Super-resolution-based stochastic generative turbulence closures
+            <a href="https://doi.org/10.1029/2025MS005324" target="_blank">Guided Unconditional and Conditional Generative Models for Super-Resolution and Inference...</a>
         </div>
     </div>
     <div class="cv_right_two">            
         <span class="pub_journal">
-            Journal of Fluid Mechanics <br>(in-prep)
+            JAMES
         </span>
         <span class="pub_year">
             2026

@@ -22,16 +22,26 @@ has_doi = np.array([len(d) > 0 for d in doi])
 
 fauthor = np.array([np.where(np.array(a.split('; ')) == 'Sadam, Akhil')[0][0] != 0 for a in author])
 
-upcoming = np.array(['in-prep' not in j for j in journal])
+uc = []
+for j in journal:
+    if '(in-prep)' in j:
+        uc.append(0)
+    elif '(submitted)' in j:
+        uc.append(1)
+    elif '(sub-judice)' in j:
+        uc.append(2)
+    else:
+        uc.append(3)
+
+upcoming = np.array(uc)
+# upcoming = np.array(['in-prep' not in j for j in journal])
 print(upcoming.shape)
-modifiers = ['(in-prep)','(sub-judice)','Abstracts']
+modifiers = ['(in-prep)','(submitted)','(sub-judice)','Abstracts']
 
 presentations = ['Abstracts', 'SIAM GS25']
 
-ind = np.lexsort((fauthor,~upcoming,unpublished,-year)) # most important is last here
+ind = np.lexsort((fauthor,upcoming,unpublished,-year)) # most important is last here
 
-# ABOVE is not ML style, change back later
- 
 author = author[ind][:maxn]
 title = title[ind][:maxn]
 journal = journal[ind][:maxn]
