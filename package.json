@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build_css": "npx tailwindcss -i ./css/tailwind/tailwind_base.css -o ./css/tailwind/dist/tailwind.css --minify && npx webpack"
+        "build_css": "npx @tailwindcss/cli -i ./css/tailwind/tailwind_base.css -o ./css/tailwind/dist/tailwind.css --minify && npx webpack"
     },
     "devDependencies": {
         "@trunkio/launcher": "^1.2.7",
